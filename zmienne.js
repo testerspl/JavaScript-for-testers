@@ -7,10 +7,10 @@
 
 // NOTE: Zmienne - przykład konstrukcji
 
-var title = 'Gra o tron'
-let year = 1983
-let getYear = () => { }
-const names = ['Krzysztof']
+var title = 'Gra o tron' // String
+let year = 1983 // Number
+let getYear = () => { } // Function
+const names = ['Krzysztof'] // Array
 
 
 // NOTE: Przykład zachowania zmiennej var
