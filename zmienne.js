@@ -1,3 +1,7 @@
+
+
+
+
 // NOTE: Słowa kluczowe dla zmiennych
 
 // var
@@ -68,4 +72,3 @@ const names = ['Krzysztof'] // Array
 // }
 
 // blockRange()
-
