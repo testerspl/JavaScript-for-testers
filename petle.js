@@ -38,8 +38,8 @@
 // let stepList = ['step', 'step1', 'step2']
 
 // for (stepIndex = 0; stepIndex < 5; stepIndex++) {
-//   // Uruchamia się 5 razy, z wartościami od 0 do 4.
-//   console.log('Idę na zachód jeden krok')
+//     // Uruchamia się 5 razy, z wartościami od 0 do 4.
+//     console.log('Idę na zachód jeden krok')
 // }
 
 
@@ -82,11 +82,11 @@
 
 // let arr = [3, 5, 7]
 
-// for (let i in arr) {console.log(i)} // 0, 1, 2
+// for (let i in arr) { console.log(i) } // 0, 1, 2
 
-// for (let i of arr) {console.log(i)} // 3, 5, 7
+// for (let i of arr) { console.log(i) } // 3, 5, 7
 
-// for (let i in arr) {console.log(arr[i])} // 3, 5, 7
+// for (let i in arr) { console.log(arr[i]) } // 3, 5, 7
 
 
 // NOTE: Przerywanie / kontynuacja pętli
@@ -95,6 +95,6 @@
 // for (var i = 0; i <= arr.length; i++) {
 
 //     if (arr[i] === 42)
-//         break  // continue 
+//         continue  //break    
 //     console.log('Iteracja')
 // }

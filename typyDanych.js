@@ -13,7 +13,7 @@
     true / false
 
     string: łańcuch znaków
-    'Krzysztof' / "Krzysztof"
+    'Krzysztof' / '"Krzysztof"
 
     symbol: unikalny, niezmienny klucz 
     const symbol1 = Symbol()
@@ -26,7 +26,8 @@
     // NOTE: Typ złożony:
 
     object: zbiór właściwości
-    {}
+    let obiekt = {}
+    let lista = []  
 
 */
 
@@ -89,14 +90,14 @@ isNaN(1 + undefined) // true
 // let id = Symbol("id")
 
 // let user = {
-//   name: "John",
-//   [age]: 30,
-//   [id]: 123
+//     name: "John",
+//     'age': 45,
+//     [id]: 123
 // }
 
 // for (let key in user) console.log(key)
 
-// console.log( "Direct: " + user[id] )
+// console.log("Direct: " + Object.values(user))
 
 
 // NOTE: String
@@ -128,7 +129,7 @@ isNaN(1 + undefined) // true
 // **********************************
 // Metoda: split(str)
 
-// console.log('Krzysztof'.split(''))
+// console.log('K,r,z,y,s,z,t,o,f'.split(','))
 
 // **********************************
 // Metoda: substr(begin, n)

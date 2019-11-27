@@ -26,9 +26,9 @@
 */
 
 
-// let wiek
+let wiek
 
-// wiek = 36
+wiek = 36
 
 // if (wiek > 18 && wiek < 30) {
 //     console.log('Masz pomiedzy 18 a 30 lat')

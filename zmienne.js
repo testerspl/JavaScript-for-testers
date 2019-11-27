@@ -11,7 +11,7 @@
 
 // NOTE: Zmienne - przykład konstrukcji
 
-var title = 'Gra o tron' // String
+// var title = 'Gra o tron' // String
 let year = 1983 // Number
 let getYear = () => { } // Function
 const names = ['Krzysztof'] // Array
@@ -19,17 +19,18 @@ const names = ['Krzysztof'] // Array
 
 // NOTE: Przykład zachowania zmiennej var
 
+// let title
+
 // title = "Gra o tron"
 
 // console.log(title)
 
-// var title
+
 
 // title = 500
 
 // console.log(title)
-/*
-*/
+
 
 // NOTE: Zasięg zmiennych
 
@@ -59,17 +60,20 @@ const names = ['Krzysztof'] // Array
 
 // NOTE: Blokowy
 
-// function blockRange() {
-//     let letter = 'A'
+let letter = 'A'
 
-//     if (letter.length) {
-//         let letter
-//         console.log(letter)
-//         letter = 'B'
-//         console.log(letter)
-//     }
+function blockRange() {
+    var letter = 'A'
 
-//     console.log(letter)
-// }
+    if (letter.length) {
+        let letter = 'B'
+        let letter
+        console.log(letter)
 
-// blockRange()
+        console.log(letter)
+    }
+
+    console.log(letter)
+}
+
+blockRange()

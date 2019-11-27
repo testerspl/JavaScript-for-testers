@@ -1,5 +1,5 @@
 
-function functionExample(x, y) { return x + y }
+// function functionExample(x, y) { return x + y }
 
 
 // let func1 = x => x * x

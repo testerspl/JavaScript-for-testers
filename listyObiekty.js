@@ -6,7 +6,7 @@
 
 let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J']
 
-console.log(osoby)
+// console.log(osoby)
 
 // const library = [
 //     { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254 },
@@ -59,15 +59,15 @@ console.log(osoby)
 // let arr = [
 //     {
 //         login: 'login',
-//         password: 'password'
+//         password: 'password1'
 //     },
 //     {
 //         login: 'login',
-//         password: 'password'
+//         password: 'password2'
 //     },
 //     {
 //         login: 'login',
-//         password: 'password'
+//         password: 'password3'
 //     }
 // ]
 
@@ -89,13 +89,14 @@ array
 Tablica na której filter został wywołany
 */
 
-// let ages = [32, 33, 16, 40]
+// let ages = [32, 33, 16, , 45, 40]
 
 // function checkAdult(age) {
-//   return age >= 18
+
+//     return age >= 18
 // }
 
-// console.log(ages.filter(checkAdult))
+// console.log(ages.filter())
 
 // **************************************************************************
 // METODA: reverse()
@@ -106,6 +107,7 @@ Tablica na której filter został wywołany
 // METODA: sort(callback)
 
 // NOTE: Przykład 1
+
 // stringArray = new Array("Blue","Humpback","Beluga")
 // numericStringArray = new Array("80","9","700")
 // numberArray = new Array(40,1,5,200)
@@ -136,7 +138,7 @@ Tablica na której filter został wywołany
 // function compareLength(a, b) {
 //     return a.length - b.length
 // }       
-        
+
 // tworzę pustą tablicę
 // let arr = []
 
@@ -149,28 +151,28 @@ Tablica na której filter został wywołany
 
 // NOTE: Przykład 3
 // let arr = []
-        
+
 // let obj1 = {name: 'Mateusz', score: 12}
 // arr.push(obj1);
-        
+
 // let obj2 = {name: 'Marek', score: 22}
 // arr.push(obj2);
-        
+
 // let obj3 = {name: 'Michał', score: 4}
 // arr.push(obj3)
-        
+
 // function compareScore(a, b) {
 //     return a.score - b.score
 // }
-        
+
 // arr.sort(compareScore)
-        
+
 // console.log(arr)
 
 /*
 [
-    {name: 'Michał', score: 4}, 
-    {name: 'Mateusz', score: 12}, 
+    {name: 'Michał', score: 4},
+    {name: 'Mateusz', score: 12},
     {name: 'Marek', score: 22}
 ]
 */
@@ -191,7 +193,7 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // **************************************************************************
 // METODA: splice(begin, n)
 
-// let arr = osoby.splice(1,2)
+// let arr = osoby.splice(1, 2)
 
 // console.log(arr)
 // console.log(osoby)
@@ -208,14 +210,14 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // NOTE: Inicjacja obiektu z wartościami:
 
 // let obj = {
-//     foo: "Hello",
+//     foo: '',
 //     bar: "World"
 // }
 
 // NOTE: Dostęp do właściwości obiektu:
 
 // let obj = {
-//     foo: "Hello",
+//     'foo': "Hello",
 //     bar: "World"
 // }
 
@@ -226,12 +228,18 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 
 // NOTE: Modyfikacja właściwości w obiekcie:
 
-// let obj = {
+// const objectExample = {
+
 //     foo: "Hello",
 //     bar: "World"
 // }
 
-// obj.foo    = "hi" 
+// let obj = {
+//     foo: () => {},
+//     bar: "World"
+// }
+
+// obj.foo = "hi"
 // obj["foo"] = "hi"
 
 
