@@ -23,7 +23,7 @@ class DocumentClass {
 		return deferred
 	}
 
-	readDir(source) {//files
+	readDir(source) {
 		return new Promise(function (resolve) {
 			fs.readdir(source, function (err, list) {
 				if (err) {
@@ -119,6 +119,6 @@ class DocumentClass {
 
 let doc = new DocumentClass()
 
-console.log(doc.readFile('./przykładowyPlik.txt'))
+console.log(doc.readFile('./lib/przykładowyPlik.txt'))
 
 // module.exports.DocumentClass = DocumentClass
