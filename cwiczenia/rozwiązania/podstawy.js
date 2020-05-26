@@ -2,6 +2,12 @@
 
 // Stwórz zmienne każdego typu i wypisz je w konsoli. Wypisz również ich typ.
 
+// let imie = 'Krzysztof'
+// let age = 36
+// let list = [1, 2, 34]
+
+// console.log(`${imie} ${age}${list}`)
+
 // NOTE: 2
 
 /*
@@ -13,17 +19,32 @@ const number2 = "34"
 Wypisz ich typ w konsoli, a następnie dodaj do siebie tak, by wyszedł wynik 57
 */
 
+// const number1 = "23"
+// const number2 = "34"
+
+// console.log(Number(number1) + Number(number2))
+
 // NOTE: Zadanie 1
 
 // Stwórz zmienną text z dowolnym zdaniem. Wypisz w konsoli to zdanie i jego długość.
+
+// console.log('Koty i psy to fajne zwierzaki'.length)
 
 //  NOTE:   Zadanie 2
 
 // Mamy tekst: Koty i psy to fajne zwierzaki Wypisz w konsoli liczbę wyrazów w tym zdaniu.
 
+// console.log('Koty i psy to fajne zwierzaki'.split(' ').length)
+
 //   NOTE:  Zadanie 3
 
 // Stwórz nową zmienną z imieniem pisanym małymi literami. Następnie używając odpowiednich funkcji dla stringów popraw to imię tak by zaczynało się z dużej litery.
+
+// let name = 'krzysztof'
+
+// let bigLetter = name.substr()
+
+// console.log('krzysztof')
 
 //  NOTE:   Zadanie 4
 
@@ -32,6 +53,8 @@ Wypisz ich typ w konsoli, a następnie dodaj do siebie tak, by wyszedł wynik 57
 // const text = "Ala ma kota";
 
 // Sprawdź czy występuje w niej słowo "kot".Jeżeli tak - wypisz w konsoli "Zdanie zawiera słowo kot", w przeciwnym razie wypisz "Zdanie nie zawiera słowa kot".
+
+// console.log(text.includes('kot'))
 
 //   NOTE:  Zadanie 5
 
@@ -44,6 +67,8 @@ Wypisz ich typ w konsoli, a następnie dodaj do siebie tak, by wyszedł wynik 57
 // "Uczę się stringów w Javascript"
 
 // Po zamianie tekstu zwróć pozycje słowa Javascript
+
+// console.log(text.replace('C++', 'JAVASCRIP'))
 
 // NOTE: Zadanie 6
 
