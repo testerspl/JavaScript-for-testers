@@ -14,15 +14,11 @@
 // var title = 'Gra o tron' // String
 let year = 1983 // Number
 let getYear = () => { } // Function
-const names = ['Krzysztof'] // Array
+const myNames = ['Krzysztof'] // Array
+const names = { nameOne:'Krzysztof' } // Object
 
-for(let i = 0; i < year; ++i) {
-
-    console.log(year)
-}
 
 // NOTE: Przykład zachowania zmiennej var
-
 
 // title = "Gra o tron"
 
@@ -30,10 +26,9 @@ for(let i = 0; i < year; ++i) {
 
 // var title
 
-// var title
-
 // title = 500
 
+// console.log(title)
 // console.log(title)
 
 
@@ -101,6 +96,6 @@ for(let i = 0; i < year; ++i) {
 //     console.log(letter)
 // }
 
-// console.log(letter) // NOTE: Przykład 3 - okomentować
+// console.log(letter) // NOTE: Przykład 3 - odkomentować
 
 // blockRange()

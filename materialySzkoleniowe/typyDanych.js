@@ -13,7 +13,7 @@
     true / false
 
     string: łańcuch znaków
-    'Krzysztof' / '"Krzysztof"
+    'Krzysztof' / "Krzysztof"
 
     symbol: unikalny, niezmienny klucz 
     const symbol1 = Symbol()
@@ -127,14 +127,14 @@ isNaN(1 + undefined) // true
 // console.log('Krzysztof'.slice(1, 4))
 
 // **********************************
-// Metoda: split(str)
-
-// console.log('K,r,z,y,s,z,t,o,f'.split(','))
-
-// **********************************
 // Metoda: substr(begin, n)
 
 // console.log('Krzysztof'.substr(1, 4))
+
+// **********************************
+// Metoda: split(str)
+
+// console.log('K,r,z,y,s,z,t,o,f'.split(','))
 
 // **********************************
 // Metoda: toLowerCase()

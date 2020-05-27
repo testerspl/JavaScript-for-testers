@@ -8,33 +8,20 @@ let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J']
 
 // console.log(osoby)
 
-// const library = [
-//     { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254 },
-//     { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264 },
-//     { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245 }
-// ]
-
-// function compare_to_sort(x, y) {
-//     if (x.title < y.title)
-//         return -1
-//     // if (x.title > y.title)
-//     // return 1
-//     return 0
-// }
-
-// console.log(library.sort(compare_to_sort))
-
-
 // *****************************************
 
-// METODA: push(elem1, elemN)
+// METODA: push(elem1, elemN) / pop()
 
 // osoby.push(1,2)
 // console.log(osoby)
+// osoby.pop()
+// console.log(osoby)
 
-// METODA: unshift(elem1, elemN)
+// METODA: unshift(elem1, elemN) / shift()
 
 // osoby.unshift(1,2)
+// console.log(osoby)
+// delete osoby[0]
 // console.log(osoby)
 
 // METODA: concat(elem1, elemN)
@@ -80,11 +67,15 @@ let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J']
 
 /*
 callback
-Funkcja sprawdzająca każdy element tablicy. Funkcja powinna zwrócić true, aby zatrzymać element lub false, aby odrzucić element. Funkcja przyjmuje trzy argumenty:
+Funkcja sprawdzająca każdy element tablicy. Funkcja powinna zwrócić true, aby zatrzymać element lub false, aby odrzucić element.
+
+Funkcja przyjmuje trzy argumenty:
 element
 Element tablicy do przetworzenia.
+
 index
 Numer indeksu procesowanego elementu tablicy.
+
 array
 Tablica na której filter został wywołany
 */
@@ -96,7 +87,7 @@ Tablica na której filter został wywołany
 //     return age >= 18
 // }
 
-// console.log(ages.filter())
+// console.log(ages.filter(checkAdult))
 
 // **************************************************************************
 // METODA: reverse()
@@ -108,10 +99,10 @@ Tablica na której filter został wywołany
 
 // NOTE: Przykład 1
 
-// stringArray = new Array("Blue","Humpback","Beluga")
-// numericStringArray = new Array("80","9","700")
-// numberArray = new Array(40,1,5,200)
-// mixedNumericArray = new Array("80","9","700",40,1,5,200)
+// let stringArray = new Array("Blue","Humpback","Beluga")
+// let numericStringArray = new Array("80","9","700")
+// let numberArray = new Array(40,1,5,200)
+// let mixedNumericArray = new Array("80","9","700",40,1,5,200)
 
 // function compareNumbers(a, b) {
 //    return a - b
@@ -120,13 +111,13 @@ Tablica na której filter został wywołany
 // console.log("tablicaNapisów: " + stringArray.join())
 // console.log("Posortowana: " + stringArray.sort())
 
-// console.log("tablicaLiczbowa: " + numberArray.join())
-// console.log("Posortowana bez funkcji porównującej: " + numberArray.sort())
-// console.log("Posortowana z funkcją porównującą: " + numberArray.sort(compareNumbers))
-
 // console.log("tablicaNapisówLiczbowych: " + numericStringArray.join())
 // console.log("Posortowana bez funkcji porównującej: " + numericStringArray.sort())
 // console.log("Posortowana z funkcją porównującą: " + numericStringArray.sort(compareNumbers))
+
+// console.log("tablicaLiczbowa: " + numberArray.join())
+// console.log("Posortowana bez funkcji porównującej: " + numberArray.sort())
+// console.log("Posortowana z funkcją porównującą: " + numberArray.sort(compareNumbers))
 
 // console.log("tablicaLiczbowaMieszna: " + mixedNumericArray.join())
 // console.log("Posortowana bez funkcji porównującej: " + mixedNumericArray.sort())
@@ -135,21 +126,6 @@ Tablica na której filter został wywołany
 
 // NOTE: Przykład 2
 
-// function compareLength(a, b) {
-//     return a.length - b.length
-// }       
-
-// tworzę pustą tablicę
-// let arr = []
-
-// arr.push('ccc', 'd', 'aa', 'bbbb')
-
-// arr.sort(compareLength)
-// console.log(arr) 
-// ['d', 'aa', 'ccc', 'bbbb']
-
-
-// NOTE: Przykład 3
 // let arr = []
 
 // let obj1 = {name: 'Mateusz', score: 12}
@@ -283,6 +259,9 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // let prop = 'last'
 // let { bar, baz, [prop]: customName } = foo
 
-// console.log(bar = 'Hello World')
-// console.log(baz = 'How are you doing?')
-// console.log(customName = 'Quite alright')
+// bar = 2
+
+// console.log(bar)
+// console.log(baz)
+// console.log(customName)
+

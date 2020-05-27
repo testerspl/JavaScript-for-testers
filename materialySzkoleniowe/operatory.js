@@ -44,7 +44,7 @@ console.log("Numer wynosi " + (memberNumber === 2 ? "$2.00" : "$10.00"))
 /= %= - podzielenie, podzielenie modulo zmiennej
 
     Przykład    Równoznaczne z      Wynik
-=	x = y	    x = y	x =         5
+=	x = y	    x = y	            x = 5
 +=	x += y	    x = x + y	        x = 15
 -=	x -= y	    x = x - y	        x = 5
 *=	x *= y	    x = x * y	        x = 50
@@ -56,6 +56,9 @@ console.log("Numer wynosi " + (memberNumber === 2 ? "$2.00" : "$10.00"))
 
 // NOTE: Przykład
 
-// let memberNumber = 
+// let memberNumber = 2
 
 // console.log("Numer wynosi " + (memberNumber === 2 ? "$2.00" : "$10.00"))
+
+// let a = 2 
+// console.log(a -= 3)
