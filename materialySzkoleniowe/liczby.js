@@ -1,5 +1,5 @@
 
-
+// Number('11') - NOTE: Zamiana String na Number
 
 // NOTE: Właściwości:
 // Math.E	- Zwraca stałą Eulera, która wynosi ok. 2.71 	2.718281828459045
@@ -44,7 +44,7 @@ console.log(Math.floor(Math.random() * 10) + 1)
 console.log(Math.pow(2, 3))
 
 // Math.ceil(x), Math.floor(x), Math.round(x) – zaokrąglenie liczby x – kolejno: zawsze w górę, zawsze w dół, zależnie od ostatniej cyfry (0-4 w dół, 5-9 w górę)
-var x = 4.8;
+let x = 4.8;
 
 console.log(Math.ceil(x)) //wynikiem będzie 5
 console.log(Math.floor(x)) //wynikiem będzie 4

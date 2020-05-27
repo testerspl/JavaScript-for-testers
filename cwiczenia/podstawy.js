@@ -23,7 +23,7 @@ Wypisz ich typ w konsoli, a następnie dodaj do siebie tak, by wyszedł wynik 57
 
 //   NOTE:  Zadanie 3
 
-// Stwórz nową zmienną z imieniem pisanym małymi literami. Następnie używając odpowiednich funkcji dla stringów popraw to imię tak by zaczynało się z dużej litery.
+// Stwórz nową funkcję która zawiera parametr z domyślną wartością: imię pisane małymi literami. Następnie używając odpowiednich funkcji dla stringów popraw to imię tak by zaczynało się z dużej litery.
 
 //  NOTE:   Zadanie 4
 
@@ -43,8 +43,6 @@ Wypisz ich typ w konsoli, a następnie dodaj do siebie tak, by wyszedł wynik 57
 
 // "Uczę się stringów w Javascript"
 
-// Po zamianie tekstu zwróć pozycje słowa Javascript
-
 // NOTE: Zadanie 6
 
 // Powiedzmy, że mamy zmienną z adresem strony:
@@ -56,8 +54,6 @@ Wypisz ich typ w konsoli, a następnie dodaj do siebie tak, by wyszedł wynik 57
 let url = 'http://mojastrona.pl?text=Uczę się stringów w Javascript';
 
 // Jak wiesz, spacji i podobnych znaków nie może być w adresie strony.Za pomocą odpowiednich zmiennych, dodawania i wykorzystując odpowiednie metody uzyskaj prawidłowy odpowiednio zakodowany adres url.
-
-console.log(url.split(' ').join('-'));
 
 //  NOTE:   Zadanie 7
 
@@ -72,18 +68,6 @@ console.log(url.split(' ').join('-'));
 // tekst pisany naprzemiennie dużymi i małymi literami
 // zamień imię Ala na Ola i wypisz wynik w konsoli
 
-// NOTE: Zadanie 8
-
-// Korzystając z obiektu Math stwórz kilka randomowych zmiennych z zakresu 10 - 100000. Po wygenerowaniu wypisz je w konsoli tak, by wszystkie kończyły się w jednej linii. Przykładowo:
-
-// 10
-// 102
-// 1
-// 1002
-// 92020
-
-// Wykorzystaj tutaj funkcję padStart().Zakładamy, że pojedyncza linia powinna mieć długość 10 znaków.
-
-//  NOTE:   Zadanie 9
+//  NOTE:   Zadanie 8
 
 // Wygeneruj pod zmienną uniqueID tekst będący losowym ciągiem liter i cyfr o długości 20.
