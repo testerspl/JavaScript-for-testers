@@ -9,7 +9,6 @@
   "author": "Krzysztof Kołodziejczyk",
   "license": "MIT",
   "dependencies": {
-    "exceljs": "^3.4.0",
     "fs": "0.0.1-security",
     "log4js": "^6.1.0"
   }
