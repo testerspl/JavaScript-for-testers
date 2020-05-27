@@ -1,4 +1,6 @@
 
+
+
 // function functionExample(x, y) { return x + y }
 
 
@@ -15,9 +17,7 @@
 // 	console.log('Myję zęby ' + ileCzasu)
 // }
 
-// let myjZeby = (ileCzasu) => {
-// 	console.log('Myję zęby ' + ileCzasu)
-// }
+// let myjZeby = ileCzasu => console.log('Myję zęby ' + ileCzasu)
 
 // myjZeby('15 minut')
 
