@@ -17,13 +17,3 @@
 // NOTE: Napisz program JavaScript, aby uzyskać losowy element z tablicy
 
 // *****************************************************************
-
-// NOTE: Napisz program JavaScript, aby zbudować następujący wzorzec, używając zagnieżdżonej pętli for
-
-//  *
-//  * *
-//  * * *
-//  * * * *
-//  * * * * *
-
-// *****************************************************************
