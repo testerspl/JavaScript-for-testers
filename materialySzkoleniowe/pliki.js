@@ -119,6 +119,5 @@ class DocumentClass {
 
 let doc = new DocumentClass()
 
-console.log(doc.readFile('./lib/przykładowyPlik.txt'))
+console.log(doc.readFile('../lib/przykładowyPlik.txt').length)
 
-// module.exports.DocumentClass = DocumentClass
