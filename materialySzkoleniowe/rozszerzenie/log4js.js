@@ -5,7 +5,7 @@ log4js.configure({
     appenders: {
         main: {
             type: 'fileSync',
-            filename: './reports/log.log',
+            filename: './log.log',
             maxLogSize: 10 * 1024 * 1024,
             backups: 3,
             layout: {
