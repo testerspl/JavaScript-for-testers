@@ -4,7 +4,7 @@ class BaseMethods {
 	}
 
 	getUrl(
-		url = 'http://demo.testarena.pl/zaloguj',
+		url = 'onet.pl',
 		title = 'TestArena Demo',
 		message = 'The url is correct'
 	) {

@@ -1,27 +1,28 @@
-18:38:10.947 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
-18:38:11.071 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
-2020-11-14 18:38:11.125:INFO::main: Logging initialized @451ms to org.seleniumhq.jetty9.util.log.StdErrLog
-18:38:11.402 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
-18:38:11.810 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
-18:38:12.823 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+20:05:08.829 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+20:05:08.946 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2020-11-14 20:05:09.016:INFO::main: Logging initialized @518ms to org.seleniumhq.jetty9.util.log.StdErrLog
+20:05:09.303 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+20:05:09.712 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+20:05:10.364 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptInsecureCerts": true,
   "acceptSslCerts": true,
   "browserName": "chrome",
   "chromeOptions": {
-    "w3c": false,
+    "mobileEmulation": {
+      "deviceName": "iPhone X"
+    },
     "args": [
-      "start-maximized"
     ]
   },
   "javascriptEnabled": true,
   "marionette": true,
   "name": "Login Page Tests"
 }
-18:38:12.824 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
-Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 38416
+20:05:10.366 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 6192
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-18:38:20.638 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-18:38:21.151 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1d82287bb0fb97ef858ec8d7174430e8 (org.openqa.selenium.chrome.ChromeDriverService)
-18:38:22.355 INFO [ActiveSessions$1.onStop] - Removing session 1d82287bb0fb97ef858ec8d7174430e8 (org.openqa.selenium.chrome.ChromeDriverService)
+20:05:16.904 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+20:05:16.952 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8768c382c9c7d3a6813e52dd99ca3764 (org.openqa.selenium.chrome.ChromeDriverService)
+20:05:19.818 INFO [ActiveSessions$1.onStop] - Removing session 8768c382c9c7d3a6813e52dd99ca3764 (org.openqa.selenium.chrome.ChromeDriverService)

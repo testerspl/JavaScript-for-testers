@@ -7,6 +7,7 @@ module.exports = {
 		let login = new loginPage(browser);
 
 		login.getUrl()
+		browser.pause(10000)
 		browser.end();
 	},
 };
