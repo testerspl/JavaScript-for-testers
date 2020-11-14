@@ -6,8 +6,7 @@ module.exports = {
 	'Base login test': function (browser) {
 		let login = new loginPage(browser);
 
-		login.login();
-		browser.assert.Visible('.avatar_header');
+		login.getUrl()
 		browser.end();
 	},
 };
