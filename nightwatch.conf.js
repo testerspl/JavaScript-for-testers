@@ -5,7 +5,7 @@ const screenshotPath = './screenshots/' + packageJson.version + '/'
 const config = {
 
   "src_folders": [
-    "tests", "tests/smokekeTests"
+    "tests"
   ],
   "output_folder": "./reports/",
   "custom_commands_path": "./commands/",
@@ -66,6 +66,7 @@ const config = {
       "desiredCapabilities": {
         'browserName': 'chrome',
         "chromeOptions": {
+          w3c: false,
           "args": ['start-maximized']
         },
         'javascriptEnabled': true,
