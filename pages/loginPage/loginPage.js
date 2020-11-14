@@ -6,11 +6,7 @@ class LoginPage extends baseMethods {
 		super(browser);
 	}
 
-	getTextData(selector, callback) {
-		this.browser.element('css selector', selector, (ele) => {
-			this.browser.elementIdText(ele.value.ELEMENT, callback);
-		});
-	}
+
 }
 
 module.exports.LoginPage = LoginPage;
