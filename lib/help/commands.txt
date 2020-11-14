@@ -1,0 +1,42 @@
+Przejście na wybraną stronę:
+
+.url('link do strony')
+*******************************************************
+Oczekiwanie na widoczny element:
+
+browser.waitForElementVisible(selektor, czas)
+*******************************************************
+Wyszukanie elementu na stronie:
+
+browser.element('css selector', 'selektor', (result) => {
+      
+    })
+*******************************************************
+Wyszukanie wielu elementów na stronie:
+
+browser.elements('css selector', 'selektor', (result) => {
+      
+    })
+*******************************************************
+Kliknięcie:
+
+browser.click(selektor)
+*******************************************************
+Usunięcie wartości z pola:
+
+browser.clearValue(selektor)
+*******************************************************
+Wprowadzenie wartości w pole:
+
+browser.setValue('Przykładowy tekst')
+*******************************************************
+Pobranie tekstu z elementu:
+
+browser.getText("#main ul li a.first", (result) =>{
+
+}
+*******************************************************
+Zakończenie sesji przeglądarki:
+
+browser.end()
+*******************************************************
