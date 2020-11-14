@@ -6,7 +6,7 @@ class BaseMethods {
 	getUrl(
 		url = 'http://demo.testarena.pl/zaloguj',
 		title = 'TestArena Demo',
-		message = 'Poprawna strona'
+		message = 'The url is correct'
 	) {
 		this.browser.url(url).assert.title(title).Log(message);
 
