@@ -28,7 +28,7 @@
 
 // let wiek
 
-// wiek = 36
+// wiek = 1
 
 // if (wiek > 18 && wiek < 30) {
 //     console.log('Masz pomiedzy 18 a 30 lat')
@@ -50,7 +50,7 @@
 // let czlowiek = {
 //     imie: 'Krzysiek',
 //     wiek: 36,
-//     pieniadze: 10000
+//     pieniadze: 2000
 // }
 
 // if (czlowiek.wiek > 18 && czlowiek.pieniadze > 5000) {
@@ -59,7 +59,7 @@
 
 
 // *************************************************************
-// let samochod = 'Mercedes'
+// let samochod = ''
 
 // switch (samochod) {
 //     case 'Mercedes':

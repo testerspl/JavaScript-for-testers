@@ -4,7 +4,7 @@
 
 // NOTE: WHILE
 
-// while (condition) {
+// while () {
 //     statement;
 //     statement;
 //     etc.
@@ -35,7 +35,8 @@
 // }
 
 // let stepIndex
-// let stepList = ['step', 'step1', 'step2']
+let stepList = ['step', 'step1', 'step2']
+
 
 // for (stepIndex = 0; stepIndex < 5; stepIndex++) {
 //     // Uruchamia się 5 razy, z wartościami od 0 do 4.
@@ -45,8 +46,9 @@
 
 // NOTE: For-In
 
-// for (let key in obj) {
-//     console.log(key);
+// for (let index in stepList) {
+
+//     console.log(stepList[index]);
 // }
 
 
@@ -55,7 +57,7 @@
 // let arr = ["foo", "bar", "baz"];
 
 // for (let elem of arr) {
-//     console.log(elem);
+//    console.log(stepList[key]);
 // }
 
 // let str = "Hello";
@@ -91,10 +93,12 @@
 
 // NOTE: Przerywanie / kontynuacja pętli
 
-// let arr = [0, 20, 33, 42, 58, 16]
-// for (var i = 0; i <= arr.length; i++) {
+let arr = [0, 20, 33, 42, 58, 16]
 
-//     if (arr[i] === 42)
-//         continue  // break    
-//     console.log('Iteracja')
-// }
+for (var index = 0; index <= arr.length; index++) {
+
+    if (arr[index] === 42)
+        continue  
+        // break    
+    console.log('Iteracja')
+}

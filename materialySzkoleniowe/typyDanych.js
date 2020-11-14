@@ -45,8 +45,8 @@ isNaN(1 + undefined) // true
 // console.log(null * 5) // 0
 // console.log("6" - 1)  // 5
 // console.log(6 - "1")  // 5
-// console.log("6" + 1)  // 61 String
-// console.log(6 + "1")  // 61 String
+console.log("6" + 1)  // 61 String
+console.log(6 + "1")  // 61 String
 // console.log("three" * 2) // NaN
 // console.log(2 * "three") // NaN
 // console.log(3 + null)      // 3
@@ -86,18 +86,18 @@ isNaN(1 + undefined) // true
 // console.log(Symbol('foo').toString().split('o'))  
 
 // **********************************
-// let age = 30
-// let id = Symbol("id")
+let age = 30
+let id = Symbol("id")
 
-// let user = {
-//     name: "John",
-//     'age': 45,
-//     [id]: 123
-// }
+let user = {
+    name: "John",
+    'age': 45,
+    [id]: 123
+}
 
 // for (let key in user) console.log(key)
 
-// console.log("Direct: " + Object.values(user))
+console.log("Direct: " + user.id)
 
 
 // NOTE: String

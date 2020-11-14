@@ -64,7 +64,7 @@ const names = { nameOne:'Krzysztof' } // Object
 
 //     if (letter.length) {
 //         console.log(letter) // zwraca A
-//         var letter = 'B' // NOTE: Przykład 2 - zmienić na let
+//         let letter = 'B' // NOTE: Przykład 2 - zmienić na let
 //         console.log(letter) // zwraca B
 //     }
 
@@ -80,22 +80,26 @@ const names = { nameOne:'Krzysztof' } // Object
 
 // NOTE: Blokowy
 
-// let letter = 'A'
+let letter = 'A'
 
-// function blockRange() {
-//     var letter = 'C'
+function blockRange() {
+    var letter = 'C'
 
-//     if (letter.length) {
-//         var letter = 'B'
+    if (letter.length) {
+        var letter = 'B'
         
-//         console.log(letter)
-//         var letter = 'A' // NOTE: Przykład 2 - Zamienić na let
-//         console.log(letter)
-//     }
+        console.log(letter)
+        var letter = 'A' // NOTE: Przykład 2 - Zamienić na let
+        console.log(letter)
 
-//     console.log(letter)
-// }
+        const letters = 'Krzysztof'
 
-// console.log(letter) // NOTE: Przykład 3 - odkomentować
+     
+    }
 
-// blockRange()
+    console.log(letter)
+}
+
+console.log(letter) // NOTE: Przykład 3 - odkomentować
+
+blockRange()
