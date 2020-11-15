@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="1"
+            failures="0"
             tests="1">
 
   <testsuite name="loginPageTests"
-    errors="0" failures="1" hostname="" id="" package="loginPageTests" skipped="0"
-    tests="1" time="2.206" timestamp="">
+    errors="0" failures="0" hostname="" id="" package="loginPageTests" skipped="0"
+    tests="1" time="2.787" timestamp="">
   
-    <testcase name="Base login test" classname="loginPageTests" time="2.206" assertions="1">  <failure message="Testing if the page title equals &#39;TestArena Demo&#39; in 2000ms - expected &#34;is &#39;TestArena Demo&#39;&#34; but got: &#34;&#34; (2075ms)">    at LoginPage.getUrl (C:\Szkol\Szkol\JavaScript Dla Testerów oprogramowania\JavaScript-for-testers\pages\baseMethods.js:11:32)
-    at Object.Base login test (C:\Szkol\Szkol\JavaScript Dla Testerów oprogramowania\JavaScript-for-testers\tests\loginPageTests.js:9:9)</failure>
-<system-out>[[ATTACHMENT|C:\Szkol\Szkol\JavaScript Dla Testerów oprogramowania\JavaScript-for-testers\screenshots\0.0.1\loginPageTests\Base-login-test_FAILED_Nov-14-2020-200519-GMT+0100-(czas-środkowoeuropejski.png]]</system-out>
+    <testcase name="Demo login test" classname="loginPageTests" time="2.787" assertions="2">
+
+    
+
     
     </testcase>
   

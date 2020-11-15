@@ -46,6 +46,9 @@ const config = {
         path: screenshotPath,
       },
       end_session_on_fail: true,
+      silent: true,
+      skip_testcases_on_fail: false,
+      end_session_on_fail: true,
       desiredCapabilities: {
         browserName: 'chrome',
         marionette: false,
@@ -55,6 +58,20 @@ const config = {
     },
 
     chrome: {
+      desiredCapabilities: {
+        browserName: 'chrome',
+        chromeOptions: {
+          // w3c: true,
+          args: ['start-maximized'],
+        },
+        javascriptEnabled: true,
+        marionette: true,
+        acceptSslCerts: true,
+        acceptInsecureCerts: true,
+      },
+    },
+
+    chrome_headless: {
       desiredCapabilities: {
         browserName: 'chrome',
         chromeOptions: {

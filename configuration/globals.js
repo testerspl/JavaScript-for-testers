@@ -27,8 +27,9 @@ module.exports = {
   baseUrl: ['http://demo.testarena.pl/zaloguj'],
 
   abortOnAssertionFailure: true,
-  waitForConditionPollInterval: 300,
+  waitForConditionPollInterval: 500,
   waitForConditionTimeout: 2000,
   retryAssertionTimeout: 2000,
-  throwOnMultipleElementsReturned: false
+  throwOnMultipleElementsReturned: false,
+  
 }

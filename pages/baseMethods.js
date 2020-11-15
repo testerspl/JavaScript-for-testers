@@ -4,7 +4,7 @@ class BaseMethods {
 	}
 
 	getUrl(
-		url = 'onet.pl',
+		url = this.browser.globals.baseUrl[0],
 		title = 'TestArena Demo',
 		message = 'The url is correct'
 	) {

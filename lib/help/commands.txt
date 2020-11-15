@@ -28,7 +28,7 @@ browser.clearValue(selektor)
 *******************************************************
 Wprowadzenie wartości w pole:
 
-browser.setValue('Przykładowy tekst')
+browser.setValue(selector, 'Przykładowy tekst')
 *******************************************************
 Pobranie tekstu z elementu:
 
