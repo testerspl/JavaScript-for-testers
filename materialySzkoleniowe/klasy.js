@@ -4,53 +4,53 @@
 
 // NOTE: Klasa podstawowa
 
-class Prostokat {
-  constructor(wysokosc, szerokosc) {
-    this.wysokosc = wysokosc
-    this.szerokosc = szerokosc
-  }
-}
+// class Prostokat {
+//   constructor(wysokosc, szerokosc) {
+//     this.wysokosc = wysokosc
+//     this.szerokosc = szerokosc
+//   }
+// }
 
 
 // NOTE: Dziedziczenie
 
-class Animal {
-  constructor(name, age, animalSpeak = 'No') {
-    this.name = name
-    this.age = age
-    this.animalSpeak = animalSpeak
-  }
+// class Animal {
+//   constructor(name, age, animalSpeak = 'No') {
+//     this.name = name
+//     this.age = age
+//     this.animalSpeak = animalSpeak
+//   }
 
-  speak() {
-    console.log(this.name + ' barks. ' + '\n' + this.name + ' age: ' + this.age + ' ' + this.animalSpeak)
-  }
-}
+//   speak() {
+//     console.log(this.name + ' barks. ' + '\n' + this.name + ' age: ' + this.age + ' ' + this.animalSpeak)
+//   }
+// }
 
-class Dog extends Animal {
-  constructor(myDogName, myDogAge) {
-    super(myDogName, myDogAge)
-  }
-  dogSpeak() {
-    this.speak()
-  }
-}
+// class Dog extends Animal {
+//   constructor(myDogName, myDogAge) {
+//     super(myDogName, myDogAge)
+//   }
+//   dogSpeak() {
+//     this.speak()
+//   }
+// }
 
-class Cat extends Animal {
-  constructor(myDogName, myDogAge, myCatSpeak) {
-    super(myDogName, myDogAge, myCatSpeak)
-  }
-  catSpeak() {
-    this.speak()
-  }
-}
+// class Cat extends Animal {
+//   constructor(myDogName, myDogAge, myCatSpeak) {
+//     super(myDogName, myDogAge, myCatSpeak)
+//   }
+//   catSpeak() {
+//     this.speak()
+//   }
+// }
 
-let dog = new Dog('Rufus',15)
+// let dog = new Dog('Rufus',15)
 
-dog.speak()
+// dog.speak()
 
-let cat = new Cat('Libra',5, 'Yes')
+// let cat = new Cat('Libra',5, 'Yes')
 
-cat.catSpeak()
+// cat.catSpeak()
 
 
 

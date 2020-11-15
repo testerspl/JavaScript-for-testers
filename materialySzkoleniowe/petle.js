@@ -93,12 +93,12 @@ let stepList = ['step', 'step1', 'step2']
 
 // NOTE: Przerywanie / kontynuacja pętli
 
-let arr = [0, 20, 33, 42, 58, 16]
+// let arr = [0, 20, 33, 42, 58, 16]
 
-for (var index = 0; index <= arr.length; index++) {
+// for (var index = 0; index <= arr.length; index++) {
 
-    if (arr[index] === 42)
-        continue  
-        // break    
-    console.log('Iteracja')
-}
+//     if (arr[index] === 42)
+//         continue  
+//         // break    
+//     console.log('Iteracja')
+// }

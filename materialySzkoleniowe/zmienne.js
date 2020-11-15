@@ -80,26 +80,26 @@ const names = { nameOne:'Krzysztof' } // Object
 
 // NOTE: Blokowy
 
-let letter = 'A'
+// let letter = 'A'
 
-function blockRange() {
-    var letter = 'C'
+// function blockRange() {
+//     var letter = 'C'
 
-    if (letter.length) {
-        var letter = 'B'
+//     if (letter.length) {
+//         var letter = 'B'
         
-        console.log(letter)
-        var letter = 'A' // NOTE: Przykład 2 - Zamienić na let
-        console.log(letter)
+//         console.log(letter)
+//         var letter = 'A' // NOTE: Przykład 2 - Zamienić na let
+//         console.log(letter)
 
-        const letters = 'Krzysztof'
+//         const letters = 'Krzysztof'
 
      
-    }
+//     }
 
-    console.log(letter)
-}
+//     console.log(letter)
+// }
 
-console.log(letter) // NOTE: Przykład 3 - odkomentować
+// console.log(letter) // NOTE: Przykład 3 - odkomentować
 
-blockRange()
+// blockRange()
