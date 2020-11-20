@@ -249,17 +249,17 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // console.log(obj.age)
 
 // **************************************************************************
-let foo = {
-    bar: 'Hello World',
-    baz: 'How are you doing?',
-    last: 'Quite alright'
-}
+// let foo = {
+//     bar: 'Hello World',
+//     baz: 'How are you doing?',
+//     last: 'Quite alright'
+// }
 
-let prop = 'last'
-let { bar, baz, [prop]: customName } = foo
+// let prop = 'last'
+// let { bar, baz, [prop]: customName } = foo
 
-bar = 2
+// bar = 2
 
-console.log(bar)
-console.log(baz)
-console.log(customName)
+// console.log(bar)
+// console.log(baz)
+// console.log(customName)

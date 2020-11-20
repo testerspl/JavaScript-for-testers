@@ -4,12 +4,19 @@
   "description": "Podstawy języka JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "chrome-tests": "node nightwatch.js -e chrome tests/demoTest.js",
+    "firefox-tests": "node nightwatch.js -e firefox tests/demoTest.js"
   },
   "author": "Krzysztof Kołodziejczyk",
   "license": "MIT",
   "dependencies": {
     "fs": "0.0.1-security",
-    "log4js": "^6.3.0"
+    "log4js": "^6.3.0",
+    "path": "0.12.7",
+    "selenium-server": "^3.141.59",
+    "selenium-download": "^2.0.15",
+    "chromedriver": "^86.0.0",
+    "geckodriver": "^1.20.0",
+    "nightwatch": "^1.5.1"
   }
 }

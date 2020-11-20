@@ -86,18 +86,18 @@ console.log(6 + "1")  // 61 String
 // console.log(Symbol('foo').toString().split('o'))  
 
 // **********************************
-let age = 30
-let id = Symbol("id")
+// let age = 30
+// let id = Symbol("id")
 
-let user = {
-    name: "John",
-    'age': 45,
-    [id]: 123
-}
+// let user = {
+//     name: "John",
+//     'age': 45,
+//     [id]: 123
+// }
 
 // for (let key in user) console.log(key)
 
-console.log("Direct: " + user.id)
+// console.log("Direct: " + user.id)
 
 
 // NOTE: String

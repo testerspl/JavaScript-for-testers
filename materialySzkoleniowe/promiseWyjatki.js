@@ -35,33 +35,33 @@
 
 // NOTE: Wyjątki:
 
-class Animal {
-  constructor(name, age) {
-    this.name = name
-    this.age = age
-  }
+// class Animal {
+//   constructor(name, age) {
+//     this.name = name
+//     this.age = age
+//   }
 
-  speak() {
-    console.log(this.name + ' makes a noise.')
-  }
-}
+//   speak() {
+//     console.log(this.name + ' makes a noise.')
+//   }
+// }
 
-class Dog extends Animal {
-  constructor(myDogName, myDogAge) {
-    super(myDogName,myDogAge)
-  }
-  myDogSpeak() {
+// class Dog extends Animal {
+//   constructor(myDogName, myDogAge) {
+//     super(myDogName,myDogAge)
+//   }
+//   myDogSpeak() {
   
-    try {
-      speak()
-      console.log(this.name + ' age: ' + this.age)
-    } catch (ex) {
-      console.log('Error: ' + this.speak())
-      console.log(ex)
-    }
-  }
-}
+//     try {
+//       speak()
+//       console.log(this.name + ' age: ' + this.age)
+//     } catch (ex) {
+//       console.log('Error: ' + this.speak())
+//       console.log(ex)
+//     }
+//   }
+// }
 
-let dog = new Dog()
+// let dog = new Dog()
 
-dog.myDogSpeak()
+// dog.myDogSpeak()
