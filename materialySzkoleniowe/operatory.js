@@ -56,9 +56,10 @@ console.log("Numer wynosi " + (memberNumber === 2 ? "$2.00" : "$10.00"))
 
 // NOTE: Przykład
 
-// let memberNumber = 2
+// let memberNumber = "Krzysztof"
 
-// console.log("Numer wynosi " + (memberNumber === 2 ? "$2.00" : "$10.00"))
+// console.log("Numer wynosi " + (memberNumber === "Krzysztof" ? "$2.00" : "$10.00"))
+
 
 // let a = 2 
 // console.log(a -= 3)

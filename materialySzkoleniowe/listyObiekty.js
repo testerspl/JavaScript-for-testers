@@ -1,10 +1,6 @@
-
-
-
-
 // HACK: TABLICE
 
-let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J']
+let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J'];
 
 // console.log(osoby)
 
@@ -38,27 +34,29 @@ let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J']
 
 // METODA: forEach(callback)
 // osoby.forEach((value, index, arr) => {
+//     console.log(osoby[0]);
+    
 
-// console.log(arr)
-// })
+// 	console.log(arr);
+// });
 
 // METODA: map(callback)
 // let arr = [
 //     {
-//         login: 'login',
+//         login: 'login1',
 //         password: 'password1'
 //     },
 //     {
-//         login: 'login',
+//         login: 'login2',
 //         password: 'password2'
 //     },
 //     {
-//         login: 'login',
+//         login: 'login3',
 //         password: 'password3'
 //     }
 // ]
 
-// let passwordList = arr.map(pass => pass.password)
+// let passwordList = arr.map(login => login.login)
 
 // console.log(passwordList)
 
@@ -87,7 +85,9 @@ Tablica na której filter został wywołany
 //     return age >= 18
 // }
 
-// console.log(ages.filter(checkAdult))
+// let newAges = ages.filter(checkAdult)
+
+// console.log(ages)
 
 // **************************************************************************
 // METODA: reverse()
@@ -122,7 +122,6 @@ Tablica na której filter został wywołany
 // console.log("tablicaLiczbowaMieszna: " + mixedNumericArray.join())
 // console.log("Posortowana bez funkcji porównującej: " + mixedNumericArray.sort())
 // console.log("Posortowana z funkcją porównującą: " + mixedNumericArray.sort(compareNumbers))
-
 
 // NOTE: Przykład 2
 
@@ -174,7 +173,6 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // console.log(arr)
 // console.log(osoby)
 
-
 // **************************************************************************
 // HACK: OBIEKTY
 
@@ -182,10 +180,10 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 
 // let obj = {}
 
-
 // NOTE: Inicjacja obiektu z wartościami:
 
 // let obj = {
+    
 //     foo: '',
 //     bar: "World"
 // }
@@ -193,9 +191,10 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // NOTE: Dostęp do właściwości obiektu:
 
 // let obj = {
-//     'foo': "Hello",
+//     "foo": "Hello",
 //     bar: "World"
 // }
+
 
 // obj.foo     //"Hello"
 
@@ -218,13 +217,13 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // obj.foo = "hi"
 // obj["foo"] = "hi"
 
+// console.log(Object.keys(obj))
 
 // NOTE: Przejdź pętlą przez klucze obiektu:
 
 // for (let key in obj) {
 //     console.log(key)
 // }
-
 
 // **************************************************************************
 // let suffix = " name"
@@ -250,18 +249,17 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // console.log(obj.age)
 
 // **************************************************************************
-// let foo = {
-//     bar: 'Hello World',
-//     baz: 'How are you doing?',
-//     last: 'Quite alright'
-// }
+let foo = {
+    bar: 'Hello World',
+    baz: 'How are you doing?',
+    last: 'Quite alright'
+}
 
-// let prop = 'last'
-// let { bar, baz, [prop]: customName } = foo
+let prop = 'last'
+let { bar, baz, [prop]: customName } = foo
 
-// bar = 2
+bar = 2
 
-// console.log(bar)
-// console.log(baz)
-// console.log(customName)
-
+console.log(bar)
+console.log(baz)
+console.log(customName)

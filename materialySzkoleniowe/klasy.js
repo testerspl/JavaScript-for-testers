@@ -14,29 +14,44 @@ class Prostokat {
 
 // NOTE: Dziedziczenie
 
-// class Animal {
-//   constructor(name, age) {
-//     this.name = name
-//     this.age = age
-//   }
+class Animal {
+  constructor(name, age, animalSpeak = 'No') {
+    this.name = name
+    this.age = age
+    this.animalSpeak = animalSpeak
+  }
 
-//   speak() {
-//     console.log(this.name + ' makes a noise.')
-//   }
-// }
+  speak() {
+    console.log(this.name + ' barks. ' + '\n' + this.name + ' age: ' + this.age + ' ' + this.animalSpeak)
+  }
+}
 
-// class Dog extends Animal {
-//   constructor(myDogName, myDogAge) {
-//     super(myDogName,myDogAge)
-//   }
-//   speak() {
-//     console.log(this.name + ' barks. ' + '\n' + this.name + ' age: ' + this.age)
-//   }
-// }
+class Dog extends Animal {
+  constructor(myDogName, myDogAge) {
+    super(myDogName, myDogAge)
+  }
+  dogSpeak() {
+    this.speak()
+  }
+}
 
-// let dog = new Dog('Rufus',15)
+class Cat extends Animal {
+  constructor(myDogName, myDogAge, myCatSpeak) {
+    super(myDogName, myDogAge, myCatSpeak)
+  }
+  catSpeak() {
+    this.speak()
+  }
+}
 
-// dog.speak()
+let dog = new Dog('Rufus',15)
+
+dog.speak()
+
+let cat = new Cat('Libra',5, 'Yes')
+
+cat.catSpeak()
+
 
 
 // NOTE: Metody statyczne
@@ -53,7 +68,10 @@ class Prostokat {
 
 //     return Math.sqrt(dx * dx + dy * dy)
 //   }
+
 // }
+
+
 
 // const p1 = new Punkt(5, 5)
 // const p2 = new Punkt(10, 10)
