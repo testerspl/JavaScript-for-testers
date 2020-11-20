@@ -24,7 +24,7 @@ module.exports = {
   //   })
   // },
 
-  baseUrl: ['http://demo.testarena.pl/zaloguj'],
+  baseUrl: ['http://demo.testarena.pl/zaloguj', 'http://beta.demo.testarena.pl/login'],
 
   abortOnAssertionFailure: true,
   waitForConditionPollInterval: 500,
