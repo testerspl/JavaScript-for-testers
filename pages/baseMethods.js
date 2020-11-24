@@ -15,7 +15,17 @@ class BaseMethods {
 
 	getTextData(selector, callback) {
 		this.browser.element('css selector', selector, (ele) => {
-			this.browser.elementIdText(ele.value.ELEMENT, callback);
+			this.browser.elementIdText(ele.value, callback);
+		});
+	}
+
+	getTxtFromElement(selector, assertText) {
+		this.browser.getText(selector, (txt) => {
+			this.browser.assert.equal(txt.value, assertText);
+
+			return new Promise((resolve) => {
+				resolve(txt);
+			});
 		});
 	}
 }

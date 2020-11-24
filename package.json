@@ -4,8 +4,8 @@
   "description": "Podstawy języka JavaScript",
   "main": "index.js",
   "scripts": {
-    "chrome-tests": "node nightwatch.js -e chrome tests/demoTest.js",
-    "firefox-tests": "node nightwatch.js -e firefox tests/demoTest.js"
+    "chrome-tests": "node nightwatch.js -e chrome",
+    "firefox-tests": "node nightwatch.js -e firefox"
   },
   "author": "Krzysztof Kołodziejczyk",
   "license": "MIT",

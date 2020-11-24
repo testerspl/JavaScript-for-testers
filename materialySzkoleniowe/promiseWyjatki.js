@@ -1,36 +1,36 @@
 
 
-// let promise1 = new Promise(function (resolve, reject) {
-//     setTimeout(function () {
-//         resolve('foo')
-//     }, 300)
-// })
+let promise1 = new Promise( (resolve, reject) => {
+    setTimeout(function () {
+        resolve('foo')
+    })
+})
 
-// promise1.then((value) => {
-//     console.log(value)
-//     // expected output: "foo"
-// })
+promise1.then((value) => {
+    console.log(value)
+    // expected output: "foo"
+})
 
-// console.log(promise1)
-// // expected output: [object Promise]
+console.log(promise1)
+// expected output: [object Promise]
 
 
-// // NOTE: Obsługa błędów
+// NOTE: Obsługa błędów
 
-// let promise2 = new Promise((resolve, reject) => {
-//     setTimeout(function () {
-//         resolve('foo')
-//         reject(console.log("DEHDBRIBIJR"))
-//     }, 300)
-// })
+let promise2 = new Promise((resolve, reject) => {
+    setTimeout(function () {
+        resolve('foo')
+        reject(console.log("DEHDBRIBIJR"))
+    }, 300)
+})
 
-// promise2.then((value) => {
-//     console.log(value)
-//     // expected output: "foo"
-// }).catch(err => console.log(err))
+promise2.then((value) => {
+    console.log(value)
+    // expected output: "foo"
+}).catch(err => console.log(err))
 
-// console.log(promise1)
-//   // expected output: [object Promise]
+console.log(promise1)
+  // expected output: [object Promise]
 
 
 // NOTE: Wyjątki:

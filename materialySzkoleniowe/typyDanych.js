@@ -26,9 +26,8 @@
     // NOTE: Typ złożony:
 
     object: zbiór właściwości
-    let obiekt = {}
+    let obiekt = {} 
     let lista = []  
-
 */
 
 typeof null        // "object"
