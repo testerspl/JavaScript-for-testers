@@ -27,18 +27,4 @@ module.exports = {
 
 		browser.Log(new loginPage(browser).getLoginData()[1]);
 	},
-	'Login to testarena with false data1': (browser) => {
-		// let login = new loginPage(browser);
-
-		new loginPage(browser).getUrl();
-
-		browser.Log(new loginPage(browser).getLoginData()[1]);
-	},
-	'Login to testarena with false data2': (browser) => {
-		// let login = new loginPage(browser);
-
-		new loginPage(browser).getUrl();
-
-		browser.Log(new loginPage(browser).getLoginData()[1]);
-	},
 };
