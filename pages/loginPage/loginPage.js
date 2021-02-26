@@ -8,10 +8,7 @@ class LoginPage extends baseMethods {
 	}
 
 	getLoginData() {
-		return new files().readFile('../../lib/przykładowyPlik.txt');
-		// [login&*%&%@, pass&(&*(&(*, hiugu%*%&*%, '']
-
-		// JSON.parse(new files().readFile('../../lib/przykładowyPlik.json'))
+		return new files().readFile('lib/przykładowyPlik.txt');
 	}
 
 	login(

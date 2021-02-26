@@ -23,27 +23,22 @@ module.exports = {
 	'Login to testarena with false data': (browser) => {
 		// let login = new loginPage(browser);
 
-		new loginPage(browser)
-			.getUrl()
-			.login(
-				new loginPage(browser).getLoginData()[0],
-				new loginPage(browser).getLoginData()[1]
-			)
-			.checkEmailAndPassFields();
-	},
+		new loginPage(browser).getUrl();
 
-	'Login to testarena with false pass': (browser) => {
+		browser.Log(new loginPage(browser).getLoginData()[1]);
+	},
+	'Login to testarena with false data1': (browser) => {
 		// let login = new loginPage(browser);
 
-		new loginPage(browser)
-			.getUrl()
-			.login(
-				new loginPage(browser).getLoginData()[2],
-				new loginPage(browser).getLoginData()[3]
-			)
-			.checkEmailAndPassFields(
-				'Nieprawidłowy format adresu e-mail. Wprowadź adres ponownie.',
-				'Pole wymagane'
-			);
+		new loginPage(browser).getUrl();
+
+		browser.Log(new loginPage(browser).getLoginData()[1]);
+	},
+	'Login to testarena with false data2': (browser) => {
+		// let login = new loginPage(browser);
+
+		new loginPage(browser).getUrl();
+
+		browser.Log(new loginPage(browser).getLoginData()[1]);
 	},
 };

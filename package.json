@@ -4,8 +4,9 @@
   "description": "Podstawy języka JavaScript",
   "main": "index.js",
   "scripts": {
-    "chrome-tests": "node nightwatch.js -e chrome",
-    "chrome-headless": "node nightwatch.js -e chrome_headless"
+    "chrome-desktop": "node nightwatch.js -e chrome",
+    "chrome-headless": "node nightwatch.js -e chrome_headless",
+    "iphonex": "node nightwatch.js -e chrome_headless"
   },
   "author": "Krzysztof Kołodziejczyk",
   "license": "MIT",
