@@ -3,3 +3,7 @@ node_modules/
 jspm_packages/
 package-lock.json
 .npm
+reports/*
+!reports/logs
+reports/logs/*
+!reports/logs/.gitkeep
