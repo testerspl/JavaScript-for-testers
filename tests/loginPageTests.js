@@ -1,6 +1,5 @@
 const loginPage = require('../pages/loginPage/loginPage.js').LoginPage;
-const loginSelectors = require('../pages/loginPage/loginPageSelectors.js');
-
+const logger = require('../configuration/logger/log4js.js').logAll;
 module.exports = {
 	afterEach: function (browser, done) {
 		browser.end(function () {
@@ -8,23 +7,9 @@ module.exports = {
 		});
 	},
 
-	// after: function () {
-	// 	process.exit();
-	// },
-
-	// 'Demo login test': (browser) => {
-	// 	// let login = new loginPage(browser);
-
-	// 	new loginPage(browser).getUrl().login();
-
-	// 	browser.assert.urlEquals('http://demo.testarena.pl/');
-	// },
-
-	'Login to testarena with false data': (browser) => {
-		// let login = new loginPage(browser);
-
+	'Demo login test': (browser) => {
 		new loginPage(browser).getUrl();
 
-		browser.Log(new loginPage(browser).getLoginData()[1]);
+		browser.assert.title('Protractor practice website - Registration');
 	},
 };

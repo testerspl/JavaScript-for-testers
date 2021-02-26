@@ -23,13 +23,14 @@ module.exports = {
 	// },
 
 	baseUrl: [
-		'http://demo.testarena.pl/zaloguj',
-		'http://beta.demo.testarena.pl/login',
+		'http://www.way2automation.com/angularjs-protractor/registeration/#/login',
+		'http://www.way2automation.com/angularjs-protractor/multiform/#/form/payment',
 	],
 
 	abortOnAssertionFailure: true,
-	waitForConditionPollInterval: 500,
-	waitForConditionTimeout: 2000,
-	retryAssertionTimeout: 2000,
+	waitForConditionPollInterval: 3000,
+	waitForConditionTimeout: 30000,
+	retryAssertionTimeout: 1000,
 	throwOnMultipleElementsReturned: false,
+	asyncHookTimeout: 30000,
 };
