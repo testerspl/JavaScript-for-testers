@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "chrome-tests": "node nightwatch.js -e chrome",
-    "firefox-tests": "node nightwatch.js -e firefox"
+    "chrome-headless": "node nightwatch.js -e chrome_headless"
   },
   "author": "Krzysztof Kołodziejczyk",
   "license": "MIT",
@@ -15,8 +15,8 @@
     "path": "0.12.7",
     "selenium-server": "^3.141.59",
     "selenium-download": "^2.0.15",
-    "chromedriver": "^86.0.0",
-    "geckodriver": "^1.20.0",
+    "chromedriver": "^88.0.0",
+    "geckodriver": "^1.22.1",
     "nightwatch": "^1.5.1"
   }
 }
