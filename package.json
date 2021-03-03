@@ -4,7 +4,7 @@
   "description": "Podstawy języka JavaScript",
   "main": "index.js",
   "scripts": {
-    "chrome-desktop": "node nightwatch.js -e chrome",
+    "chrome-desktop": "node nightwatch.js -e chrome ",
     "chrome-headless": "node nightwatch.js -e chrome_headless",
     "iphonex": "node nightwatch.js -e chrome_headless"
   },

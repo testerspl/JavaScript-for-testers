@@ -19,8 +19,23 @@ class BaseMethods {
 		});
 	}
 
-	getTxtFromElement(selector, callback) {
+	getTxtFromElement(
+		selector,
+		callback = (text) => {
+			this.browser.Log(text.value);
+		}
+	) {
 		this.browser.getText(selector, callback);
+		return this;
+	}
+
+	checkText(selector, assertText) {
+		this.getTxtFromElement(
+			selector,
+			(text) => {
+				browser.assert.strictEqual(text.value, assertText);
+			}
+		);
 	}
 }
 
