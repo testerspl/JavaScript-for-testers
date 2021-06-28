@@ -30,12 +30,9 @@ class BaseMethods {
 	}
 
 	checkText(selector, assertText) {
-		this.getTxtFromElement(
-			selector,
-			(text) => {
-				browser.assert.strictEqual(text.value, assertText);
-			}
-		);
+		this.getTxtFromElement(selector, (text) => {
+			browser.assert.strictEqual(text.value, assertText);
+		});
 	}
 }
 

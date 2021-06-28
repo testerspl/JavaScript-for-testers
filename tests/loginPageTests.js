@@ -8,26 +8,17 @@ module.exports = {
 		});
 	},
 
-	// 'Demo login test': (browser) => {
-	// 	new loginPage(browser).getUrl();
-	// 	browser.Login();
-	// 	new loginPage(browser).getTxtFromElement(
-	// 		'body > div.jumbotron > div > div > div > h1',
-	// 		(text) => {
-	// 			browser.assert.strictEqual(text.value, 'Home');
-	// 		}
-	// 	);
-	// },
-
-	// 'Demo login test with emty data': (browser) => {
-	// 	new loginPage(browser).getUrl().checkEmptyDataForm();
-	// },
-
-	'Demo login test with emty data': (browser) => {
-		new loginPage(browser)
-			.getUrl(browser.globals.baseUrl[2])
-			.checkDeletedElement();
-
-			logger.error()
+	'Demo login test': (browser) => {
+		new loginPage(browser).getUrl();
+		// browser.Login();
+		new loginPage(browser).getTxtFromElement(
+			'.alert.alert-info.ng-scope',
+			(text) => {
+				browser.assert.strictEqual(
+					text.value,
+					`Username: angular\nPassword: password`
+				);
+			}
+		);
 	},
 };
