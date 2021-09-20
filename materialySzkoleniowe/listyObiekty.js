@@ -33,12 +33,14 @@ let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J'];
 // console.log(osoby.join('-'))
 
 // METODA: forEach(callback)
-// osoby.forEach((value, index, arr) => {
+// osoby.forEach(
+  //  (value, index, arr) => {
 //     console.log(osoby[0]);
-    
+// 
 
 // 	console.log(arr);
-// });
+// }
+// );
 
 // METODA: map(callback)
 // let arr = [
@@ -168,6 +170,8 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // **************************************************************************
 // METODA: splice(begin, n)
 
+
+
 // let arr = osoby.splice(1, 2)
 
 // console.log(arr)
@@ -183,7 +187,7 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // NOTE: Inicjacja obiektu z wartościami:
 
 // let obj = {
-    
+
 //     foo: '',
 //     bar: "World"
 // }
@@ -199,7 +203,6 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // obj.foo     //"Hello"
 
 // obj["foo"]  //"Hello"
-
 
 // NOTE: Modyfikacja właściwości w obiekcie:
 

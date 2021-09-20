@@ -16,8 +16,8 @@
     'Krzysztof' / "Krzysztof"
 
     symbol: unikalny, niezmienny klucz 
-    const symbol1 = Symbol()
-    const symbol2 = Symbol(42)
+    var symbol1 = Symbol()
+    var symbol1 = Symbol()
     const symbol3 = Symbol('foo')
 
     number: liczby całkowite lub dziesiętne
@@ -44,8 +44,8 @@ isNaN(1 + undefined) // true
 // console.log(null * 5) // 0
 // console.log("6" - 1)  // 5
 // console.log(6 - "1")  // 5
-console.log("6" + 1)  // 61 String
-console.log(6 + "1")  // 61 String
+// console.log("6" + 1)  // 61 String
+// console.log(6 + "1")  // 61 String
 // console.log("three" * 2) // NaN
 // console.log(2 * "three") // NaN
 // console.log(3 + null)      // 3
