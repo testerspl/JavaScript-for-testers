@@ -4,20 +4,20 @@
   "description": "Podstawy języka JavaScript",
   "main": "index.js",
   "scripts": {
-    "chrome-desktop": "node nightwatch.js -e chrome ",
+    "chrome-desktop": "node nightwatch.js -e chrome",
     "chrome-headless": "node nightwatch.js -e chrome_headless",
     "iphonex": "node nightwatch.js -e chrome_headless"
   },
   "author": "Krzysztof Kołodziejczyk",
   "license": "MIT",
   "dependencies": {
-    "fs": ">=0.0.1-security",
-    "log4js": ">=6.3.0",
-    "path": ">=0.12.7",
-    "selenium-server": ">=3.141.59",
-    "selenium-download": ">=2.0.16",
     "chromedriver": ">=93.0.1",
+    "fs": ">=0.0.1-security",
     "geckodriver": ">=2.0.4",
-    "nightwatch": ">=1.7.10"
+    "log4js": ">=6.3.0",
+    "nightwatch": ">=1.7.11",
+    "path": ">=0.12.7",
+    "selenium-download": ">=2.0.16",
+    "selenium-server": ">=3.141.59"
   }
 }
