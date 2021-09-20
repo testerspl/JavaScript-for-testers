@@ -8,27 +8,25 @@ const config = {
 	custom_assertions_path: './assertions/',
 	globals_path: './configuration/globals.js',
 
-	// webdriver: {
-	//   start_process: true,
-	//   port: 4444,
-	//   server_path: require('chromedriver').path,
-	//   log_path: './reports/logs/',
-	//   cli_args: [
-
-	//   ],
-	// },
-
-	selenium: {
+	webdriver: {
 		start_process: true,
-		server_path: require('selenium-server').path,
-		log_path: './reports/logs/',
-		host: 'localhost',
 		port: 4444,
-		cli_args: {
-			'webdriver.chrome.driver': require('chromedriver').path,
-			'webdriver.gecko.driver': require('geckodriver').path,
-		},
+		server_path: require('chromedriver').path,
+		log_path: './reports/logs/',
+		cli_args: [],
 	},
+
+	// selenium: {
+	// 	start_process: true,
+	// 	server_path: require('selenium-server').path,
+	// 	log_path: './reports/logs/',
+	// 	host: 'localhost',
+	// 	port: 4444,
+	// 	cli_args: {
+	// 		// 'webdriver.chrome.driver': require('chromedriver').path,
+	// 		'webdriver.gecko.driver': require('geckodriver').path,
+	// 	},
+	// },
 
 	// "test_workers": {
 	//   "enabled": true,
