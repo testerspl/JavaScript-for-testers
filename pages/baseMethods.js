@@ -20,7 +20,7 @@ class BaseMethods {
 	}
 
 	getTxtFromElement(
-		selector,
+		selector = '',
 		callback = (text) => {
 			this.browser.Log(text.value);
 		}
