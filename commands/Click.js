@@ -1,5 +1,6 @@
-exports.command = function (selector, message = `Entered selector: ${selector} into the field: ${selector}`) {
-    return this
-        .waitForElementVisible(selector)
-        .click(selector)
-}
+exports.command = function (
+	selector,
+	message = `Clicked on element with selector: ${selector}`
+) {
+	return this.waitForElementVisible(selector).click(selector).Log(message);
+};
