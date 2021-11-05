@@ -36,4 +36,5 @@ class BaseMethods {
 	}
 }
 
+
 module.exports.BaseMethods = BaseMethods;

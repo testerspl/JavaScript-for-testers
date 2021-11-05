@@ -24,8 +24,8 @@ module.exports = {
 
 	baseUrl: [
 		'http://www.way2automation.com/angularjs-protractor/registeration/#/login',
-		'http://www.way2automation.com/angularjs-protractor/multiform/#/form/payment',
-		'http://www.way2automation.com/angularjs-protractor/webtables/'
+		'https://www.way2automation.com/angularjs-protractor/multiform/#/form/payment',
+		'http://www.way2automation.com/angularjs-protractor/webtables/',
 	],
 
 	abortOnAssertionFailure: true,

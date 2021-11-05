@@ -19,5 +19,6 @@
     "path": ">=0.12.7",
     "selenium-download": ">=2.0.16",
     "selenium-server": ">=3.141.59"
+    
   }
 }
