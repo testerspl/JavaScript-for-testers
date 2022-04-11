@@ -2,7 +2,7 @@ const packageJson = require('./package.json');
 const screenshotPath = './screenshots/' + packageJson.version + '/';
 
 const config = {
-	src_folders: ['tests/multiformTests.js'], // 'tests'
+	src_folders: ['tests'], // 'tests'
 	output_folder: './reports/',
 	custom_commands_path: './commands/',
 	custom_assertions_path: './assertions/',

@@ -11,14 +11,13 @@
   "author": "Krzysztof Kołodziejczyk",
   "license": "MIT",
   "dependencies": {
-    "chromedriver": ">=94.0.0",
+    "chromedriver": ">=100.0.0",
     "fs": ">=0.0.1-security",
-    "geckodriver": ">=2.0.4",
-    "log4js": ">=6.3.0",
-    "nightwatch": ">=1.7.11",
+    "geckodriver": ">=3.0.1",
+    "log4js": ">=6.4.4",
+    "nightwatch": ">=2.1.0",
     "path": ">=0.12.7",
     "selenium-download": ">=2.0.16",
     "selenium-server": ">=3.141.59"
-    
   }
 }
