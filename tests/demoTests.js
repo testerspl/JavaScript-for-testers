@@ -1,5 +1,3 @@
-const { element } = require('nightwatch/lib/api/_loaders/element-global');
-
 module.exports = {
 	afterEach: function (browser, done) {
 		browser.end(function () {
@@ -15,8 +13,6 @@ module.exports = {
 		element('#username').sendKeys('angular');
 		element('#password').sendKeys('password');
 		element('#formly_1_input_username_0').sendKeys('angular');
-
-		browser.pause(10000);
 
 		browser.assert.titleEquals('Protractor practice website - Registration');
 	},
