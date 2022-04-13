@@ -16,17 +16,17 @@ const config = {
 		cli_args: [],
 	},
 
-	// selenium: {
-	// 	start_process: true,
-	// 	server_path: require('selenium-server').path,
-	// 	log_path: './reports/logs/',
-	// 	host: 'localhost',
-	// 	port: 4444,
-	// 	cli_args: {
-	// 		// 'webdriver.chrome.driver': require('chromedriver').path,
-	// 		'webdriver.gecko.driver': require('geckodriver').path,
-	// 	},
-	// },
+	selenium: {
+		start_process: true,
+		server_path: require('selenium-server').path,
+		log_path: './reports/logs/',
+		host: 'localhost',
+		port: 4444,
+		cli_args: {
+			// 'webdriver.chrome.driver': require('chromedriver').path,
+			'webdriver.gecko.driver': require('geckodriver').path,
+		},
+	},
 
 	// "test_workers": {
 	//   "enabled": true,
@@ -58,8 +58,8 @@ const config = {
 		chrome: {
 			desiredCapabilities: {
 				browserName: 'chrome',
-				chromeOptions: {
-					// w3c: true,
+				'goog:chromeOptions': {
+					w3c: true,
 					args: ['start-maximized'],
 				},
 				javascriptEnabled: true,
@@ -72,7 +72,7 @@ const config = {
 		chrome_headless: {
 			desiredCapabilities: {
 				browserName: 'chrome',
-				chromeOptions: {
+				'goog:chromeOptions': {
 					// w3c: true,
 					mobileEmulation: {
 						deviceName: 'iPhone X',
