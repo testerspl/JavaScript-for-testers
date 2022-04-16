@@ -8,11 +8,9 @@ module.exports = {
 	},
 
 	'Demo login test': (browser) => {
-		browser.url(
-			'http://www.way2automation.com/angularjs-protractor/registeration/#/login'
-		);
+		browser.url('http://demo.testarena.pl/zaloguj');
 
-		new loginPage().login('1', 'd', 'fre');
-		new loginPage().chechLogiPageElements();
+		new loginPage(browser).login().logout().chechLogiPageElements();
+        
 	},
 };

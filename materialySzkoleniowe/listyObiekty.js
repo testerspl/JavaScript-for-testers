@@ -4,6 +4,7 @@ let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J'];
 
 // console.log(osoby)
 
+
 // *****************************************
 
 // METODA: push(elem1, elemN) / pop()
@@ -81,6 +82,7 @@ Tablica na której filter został wywołany
 */
 
 // let ages = [32, 33, 16, , 45, 40]
+
 
 // function checkAdult(age) {
 

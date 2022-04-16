@@ -1,4 +1,8 @@
+
+
 class BaseMethods {
+
+
 	constructor(browser) {
 		this.browser = browser;
 	}
