@@ -12,7 +12,7 @@ module.exports = {
 			'http://www.way2automation.com/angularjs-protractor/registeration/#/login'
 		);
 
-		new loginPage().login('1', 'd', 'fre');
-		new loginPage().chechLogiPageElements();
+		new loginPage(browser).login('1', 'd', 'fre');
+		new loginPage(browser).chechLogiPageElements();
 	},
 };

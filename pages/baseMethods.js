@@ -18,9 +18,10 @@ class BaseMethods {
 
 	getTextData(selector, callback) {
 		this.browser.pause(5000);
-		this.browser.element('css selector', selector, (ele) => {
+		this.browser.elements('css selector', selector, (ele) => {
 			this.browser.elementIdText(Object.values(ele.value)[0], callback);
 		});
+
 	}
 
 	getTxtFromElement(
