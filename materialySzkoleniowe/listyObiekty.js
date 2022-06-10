@@ -2,6 +2,8 @@
 
 let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J'];
 
+osoby.join('-')
+
 // console.log(osoby)
 
 
@@ -66,7 +68,11 @@ let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J'];
 // **************************************************************************
 // METODA: filter(callback)
 
+
 /*
+
+
+
 callback
 Funkcja sprawdzająca każdy element tablicy. Funkcja powinna zwrócić true, aby zatrzymać element lub false, aby odrzucić element.
 
@@ -171,8 +177,6 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 
 // **************************************************************************
 // METODA: splice(begin, n)
-
-
 
 // let arr = osoby.splice(1, 2)
 

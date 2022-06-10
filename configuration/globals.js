@@ -23,6 +23,7 @@ module.exports = {
 	// },
 
 	baseUrl: [
+		'http://demo.testarena.pl/zaloguj',
 		'http://www.way2automation.com/angularjs-protractor/registeration/#/login',
 		'https://www.way2automation.com/angularjs-protractor/multiform/#/form/payment',
 		'http://www.way2automation.com/angularjs-protractor/webtables/',

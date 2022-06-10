@@ -10,7 +10,8 @@
 
 // *****************************************************************
 
-// NOTE: Napisz program JavaScript, aby usunąć znak w określonej pozycji danego ciągu i zwrócić nowy ciąg
+// NOTE: Napisz program JavaScript,
+// aby usunąć znak w określonej pozycji danego ciągu i zwrócić nowy ciąg
 
 // *****************************************************************
 
