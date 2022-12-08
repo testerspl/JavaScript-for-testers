@@ -1,8 +1,4 @@
-
-
 class BaseMethods {
-
-
 	constructor(browser) {
 		this.browser = browser;
 	}
@@ -21,7 +17,6 @@ class BaseMethods {
 		this.browser.elements('css selector', selector, (ele) => {
 			this.browser.elementIdText(Object.values(ele.value)[0], callback);
 		});
-
 	}
 
 	getTxtFromElement(
@@ -40,6 +35,5 @@ class BaseMethods {
 		});
 	}
 }
-
 
 module.exports.BaseMethods = BaseMethods;
