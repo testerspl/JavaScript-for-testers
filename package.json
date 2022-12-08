@@ -15,7 +15,7 @@
     "fs": ">=0.0.1-security",
     "geckodriver": ">=3.0.1",
     "log4js": ">=6.5.2",
-    "nightwatch": ">=2.1.7",
+    "nightwatch": ">=2.5.3",
     "path": ">=0.12.7",
     "selenium-download": ">=2.0.16",
     "selenium-server": ">=3.141.59"

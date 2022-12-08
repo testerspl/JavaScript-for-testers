@@ -1,0 +1,55 @@
+#EXPECT
+
+equal() / contain() / match()
+startWith() / endWith()
+.not
+before() / after()
+.cookie()
+.element()
+.a() / .an()
+.active
+.attribute(name)
+.css(property)
+.enabled
+.present
+.property(name)
+.selected
+.text
+.value
+.visible
+.elements()
+.count
+.title()
+.url()
+
+
+
+
+
+#ASSERT
+
+attributeContains
+attributeEquals
+attributeMatches
+cssProperty
+domPropertyContains
+domPropertyEquals
+domPropertyMatches
+elementsCount
+elementPresent
+hasClass
+hasAttribute
+enabled
+selected
+textContains
+textEquals
+textMatches
+titleContains
+titleEquals
+titleMatches
+urlContains
+urlEquals
+urlMatches
+valueContains
+valueEquals
+visible
