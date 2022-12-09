@@ -1,8 +1,8 @@
 // HACK: TABLICE
 
-let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J'];
+let osoby = ['Jan Kowalski', ['Adam Nowak'], 'Maria Z', 'Janusz G', 'Marcin J'];
 
-osoby.join('-')
+
 
 // console.log(osoby)
 
@@ -41,7 +41,7 @@ osoby.join('-')
 //     console.log(osoby[0]);
 // 
 
-// 	console.log(arr);
+// 	console.log(value);
 // }
 // );
 

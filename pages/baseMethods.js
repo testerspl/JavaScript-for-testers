@@ -34,6 +34,10 @@ class BaseMethods {
 			browser.assert.strictEqual(text.value, assertText);
 		});
 	}
+
+	assertElemVisible(selector) {
+		browser.assert.visible(selector);
+	}
 }
 
 module.exports.BaseMethods = BaseMethods;

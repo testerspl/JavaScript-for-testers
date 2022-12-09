@@ -25,7 +25,7 @@ module.exports = {
 	baseUrl: [
 		'http://demo.testarena.pl/zaloguj',
 		'http://www.way2automation.com/angularjs-protractor/registeration/#/login',
-		'https://www.way2automation.com/angularjs-protractor/multiform/#/form/payment',
+		'https://www.way2automation.com/angularjs-protractor/multiform/#/form/profile',
 		'http://www.way2automation.com/angularjs-protractor/webtables/',
 	],
 
@@ -36,7 +36,3 @@ module.exports = {
 	throwOnMultipleElementsReturned: false,
 	asyncHookTimeout: 30000,
 };
-
-
-
-

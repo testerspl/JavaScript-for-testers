@@ -15,7 +15,7 @@
     string: łańcuch znaków
     'Krzysztof' / "Krzysztof"
 
-    symbol: unikalny, niezmienny klucz 
+    symbol: unikalny, niezmienny klucz
     var symbol1 = Symbol()
     var symbol1 = Symbol()
     const symbol3 = Symbol('foo')
