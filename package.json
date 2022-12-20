@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "chrome-desktop": "node nightwatch.js -e chrome",
+	"firefox-desktop": "node nightwatch.js -e firefox",
     "chrome-headless": "node nightwatch.js -e chrome_headless",
     "iphonex": "node nightwatch.js -e chrome_headless"
   },
