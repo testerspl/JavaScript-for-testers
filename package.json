@@ -5,18 +5,18 @@
   "main": "index.js",
   "scripts": {
     "chrome-desktop": "node nightwatch.js -e chrome",
-	"firefox-desktop": "node nightwatch.js -e firefox",
+    "firefox-desktop": "node nightwatch.js -e firefox",
     "chrome-headless": "node nightwatch.js -e chrome_headless",
     "iphonex": "node nightwatch.js -e chrome_headless"
   },
   "author": "Krzysztof Kołodziejczyk",
   "license": "MIT",
   "dependencies": {
-    "chromedriver": ">=108.0.0",
+    "chromedriver": ">=111.0.0",
     "fs": ">=0.0.1-security",
     "geckodriver": ">=3.2.0",
-    "log4js": ">=6.7.1",
-    "nightwatch": ">=2.5.4",
+    "log4js": ">=6.9.1",
+    "nightwatch": ">=2.6.19",
     "path": ">=0.12.7",
     "selenium-download": ">=2.0.16",
     "selenium-server": ">=3.141.59"

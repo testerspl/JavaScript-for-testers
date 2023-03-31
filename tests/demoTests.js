@@ -1,8 +1,7 @@
 module.exports = {
 	afterEach: function (browser, done) {
-		browser.end(function () {
-			done();
-		});
+		browser.end();
+		done();
 	},
 
 	'Demo login test to test arena': (browser) => {
