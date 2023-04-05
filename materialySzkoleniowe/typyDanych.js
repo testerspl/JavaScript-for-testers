@@ -17,7 +17,7 @@
 
     symbol: unikalny, niezmienny klucz
     var symbol1 = Symbol()
-    var symbol1 = Symbol()
+    var symbol1 = Symbol('foo')
     const symbol3 = Symbol('foo')
 
     number: liczby całkowite lub dziesiętne
@@ -133,7 +133,7 @@ isNaN(1 + undefined) // true
 // **********************************
 // Metoda: split(str)
 
-// console.log('K,r,z,y,s,z,t,o,f'.split(','))
+// console.log('K,r,z,y,s,z,t,o,f'.split(' '))
 
 // **********************************
 // Metoda: toLowerCase()

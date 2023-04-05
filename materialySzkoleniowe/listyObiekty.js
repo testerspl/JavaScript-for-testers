@@ -1,11 +1,15 @@
 // HACK: TABLICE
 
-let osoby = ['Jan Kowalski', ['Adam Nowak'], 'Maria Z', 'Janusz G', 'Marcin J'];
-
-
+let osoby = [
+	'Jan Kowalski',
+	['Adam Nowak', [['Maria Z', 'Janusz G']]],
+	'Maria Z',
+	'Janusz G',
+	[[['Maria Z', 'Janusz G']]],
+	'Marcin J',
+];
 
 // console.log(osoby)
-
 
 // *****************************************
 
@@ -37,9 +41,9 @@ let osoby = ['Jan Kowalski', ['Adam Nowak'], 'Maria Z', 'Janusz G', 'Marcin J'];
 
 // METODA: forEach(callback)
 // osoby.forEach(
-  //  (value, index, arr) => {
+//  (value, index, arr) => {
 //     console.log(osoby[0]);
-// 
+//
 
 // 	console.log(value);
 // }
@@ -68,7 +72,6 @@ let osoby = ['Jan Kowalski', ['Adam Nowak'], 'Maria Z', 'Janusz G', 'Marcin J'];
 // **************************************************************************
 // METODA: filter(callback)
 
-
 /*
 
 
@@ -88,7 +91,6 @@ Tablica na której filter został wywołany
 */
 
 // let ages = [32, 33, 16, , 45, 40]
-
 
 // function checkAdult(age) {
 
@@ -204,7 +206,6 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 //     "foo": "Hello",
 //     bar: "World"
 // }
-
 
 // obj.foo     //"Hello"
 
