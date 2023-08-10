@@ -1,121 +1,155 @@
-const packageJson = require('./package.json');
-const screenshotPath = './screenshots/' + packageJson.version + '/';
+// Refer to the online docs for more details:
+// https://nightwatchjs.org/gettingstarted/configuration/
+//
 
-const config = {
-	src_folders: ['tests/demoTests.js'], // 'tests'
-	output_folder: './reports/',
-	custom_commands_path: './commands/',
-	custom_assertions_path: './assertions/',
-	globals_path: './configuration/globals.js',
+//  _   _  _         _      _                     _          _
+// | \ | |(_)       | |    | |                   | |        | |
+// |  \| | _   __ _ | |__  | |_ __      __  __ _ | |_   ___ | |__
+// | . ` || | / _` || '_ \ | __|\ \ /\ / / / _` || __| / __|| '_ \
+// | |\  || || (_| || | | || |_  \ V  V / | (_| || |_ | (__ | | | |
+// \_| \_/|_| \__, ||_| |_| \__|  \_/\_/   \__,_| \__| \___||_| |_|
+//             __/ |
+//            |___/
 
-	webdriver: {
-		start_process: true,
-		port: 4444,
-		server_path: require('chromedriver').path,
-		log_path: './reports/logs/',
-		cli_args: [],
-	},
+module.exports = {
+  // An array of folders (excluding subfolders) where your tests are located;
+  // if this is not specified, the test source must be passed as the second argument to the test runner.
+  src_folders: ['test','nightwatch/examples'],
 
-	selenium: {
-		start_process: true,
-		server_path: require('selenium-server').path,
-		log_path: './reports/logs/',
-		host: 'localhost',
-		port: 4444,
-		cli_args: {
-			// 'webdriver.chrome.driver': require('chromedriver').path,
-			'webdriver.gecko.driver': require('geckodriver').path,
-		},
-	},
+  // See https://nightwatchjs.org/guide/concepts/page-object-model.html
+  page_objects_path: ['nightwatch/page-objects'],
 
-	// "test_workers": {
-	//   "enabled": true,
-	//   "workers": 2 / auto
-	// },
+  // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
+  custom_commands_path: ['nightwatch/custom-commands'],
 
-	test_settings: {
-		default: {
-			silent: true,
-			disable_colors: false,
-			screenshots: {
-				enabled: true,
-				on_failure: true,
-				on_error: true,
-				path: screenshotPath,
-			},
-			end_session_on_fail: true,
-			silent: true,
-			skip_testcases_on_fail: false,
-			end_session_on_fail: true,
-			desiredCapabilities: {
-				browserName: 'chrome',
-				marionette: false,
-				javascriptEnabled: false,
-				acceptSslCerts: false,
-			},
-		},
+  // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-assertions.html
+  custom_assertions_path: ['nightwatch/custom-assertions'],
 
-		chrome: {
-			desiredCapabilities: {
-				browserName: 'chrome',
-				'goog:chromeOptions': {
-					w3c: true,
-					args: ['start-maximized'],
-				},
-				javascriptEnabled: true,
-				marionette: true,
-				acceptSslCerts: true,
-				acceptInsecureCerts: true,
-			},
-		},
+  // See https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html
+  plugins: [],
+  
+  // See https://nightwatchjs.org/guide/concepts/test-globals.html
+  globals_path: '',
+  
+  webdriver: {},
 
-		chrome_headless: {
-			desiredCapabilities: {
-				browserName: 'chrome',
-				'goog:chromeOptions': {
-					// w3c: true,
-					mobileEmulation: {
-						deviceName: 'iPhone X',
-					},
-					args: ['headless', 'start-maximized'],
-				},
-				javascriptEnabled: true,
-				marionette: true,
-				acceptSslCerts: true,
-				acceptInsecureCerts: true,
-			},
-		},
+  // test_workers: {
+  //   enabled: true
+  // },
 
-		iphonex: {
-			desiredCapabilities: {
-				browserName: 'chrome',
-				chromeOptions: {
-					// w3c: true,
-					mobileEmulation: {
-						deviceName: 'iPhone X',
-					},
-					args: [],
-				},
-				javascriptEnabled: true,
-				marionette: true,
-				acceptSslCerts: true,
-				acceptInsecureCerts: true,
-			},
-		},
+  test_settings: {
+    default: {
+      disable_error_log: false,
+      launch_url: 'http://localhost',
 
-		// firefox: {
-		//   desiredCapabilities: {
-		//     browserName: 'firefox',
-		//     'moz:firefoxOptions': {
-		//       args: ['-maximize'],
-		//     },
-		//     javascriptEnabled: true,
-		//     marionette: true,
-		//     acceptSslCerts: true,
-		//     acceptInsecureCerts: true,
-		//   },
-		// },
-	},
+      screenshots: {
+        enabled: false,
+        path: 'screens',
+        on_failure: true
+      },
+
+      desiredCapabilities: {
+        browserName: 'chrome'
+      },
+      
+      webdriver: {
+        start_process: true,
+        server_path: ''
+      },
+      
+    },
+    
+    chrome: {
+      desiredCapabilities: {
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+          // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
+          //
+          // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
+          w3c: true,
+          args: [
+            //'--no-sandbox',
+            //'--ignore-certificate-errors',
+            //'--allow-insecure-localhost',
+            //'--headless'
+          ]
+        }
+      },
+
+      webdriver: {
+        start_process: true,
+        server_path: '',
+        cli_args: [
+          // --verbose
+        ]
+      }
+    },
+    
+    'android.real.chrome': {
+      desiredCapabilities: {
+        real_mobile: true,
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+          // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
+          //
+          // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
+          w3c: true,
+          args: [
+            //'--no-sandbox',
+            //'--ignore-certificate-errors',
+            //'--allow-insecure-localhost',
+            //'--headless'
+          ],
+          androidPackage: 'com.android.chrome',
+          // add the device serial to run tests on, if multiple devices are online
+          // Run command: `$ANDROID_HOME/platform-tools/adb devices`
+          // androidDeviceSerial: ''
+        },
+      },
+    
+      webdriver: {
+        start_process: true,
+        server_path: '',
+        cli_args: [
+          // --verbose
+        ]
+      }
+    },
+
+    'android.emulator.chrome': {
+      desiredCapabilities: {
+        real_mobile: false,
+        avd: 'nightwatch-android-11',
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+          // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
+          //
+          // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
+          w3c: true,
+          args: [
+            //'--no-sandbox',
+            //'--ignore-certificate-errors',
+            //'--allow-insecure-localhost',
+            //'--headless'
+          ],
+          androidPackage: 'com.android.chrome',
+          // add the device serial to run tests on, if multiple devices are online
+          // Run command: `$ANDROID_HOME/platform-tools/adb devices`
+          // androidDeviceSerial: ''
+        },
+      },
+    
+      webdriver: {
+        start_process: true,
+        // path to chromedriver executable which can work with the factory
+        // version of Chrome mobile browser on the emulator (version 83).
+        server_path: 'chromedriver-mobile/chromedriver.exe',
+        cli_args: [
+          // --verbose
+        ]
+      }
+    },
+    
+  },
+  
 };
-
-module.exports = config;

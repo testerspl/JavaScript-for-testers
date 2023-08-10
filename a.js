@@ -1,0 +1,1 @@
+console.log('Koty i psy to fajne zwierzaki.'.slice(14,30))
