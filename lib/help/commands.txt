@@ -34,7 +34,7 @@ Pobranie tekstu z elementu:
 
 browser.getText("#main ul li a.first", (result) =>{
 
-}
+})
 *******************************************************
 Zakończenie sesji przeglądarki:
 

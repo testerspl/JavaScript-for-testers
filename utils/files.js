@@ -35,9 +35,9 @@ class DocumentClass {
 	readFile(filePath, encoding = this.encoding[0]) {
 		try {
 			return fs
-				.readFileSync(filePath, encoding)
-				.toString()
-				.split(/[[\n,\r]+/);
+				.readFileSync(filePath, encoding) // odczyt pliku, ['login&*%&%@,pass&(&*(&(*,hiugu%*%&*%'] 
+				.toString() // zamiana listy na string, 'login&*%&%@,pass&(&*(&(*,hiugu%*%&*%'
+				.split(/[[\n,\r]+/); // podzielenie tekstu po nowej linii i przecinku, ['login&*%&%@','pass&(&*(&(*','hiugu%*%&*%']
 		} catch (err) {
 			console.error(`Couldn't read file with path: ${filePath} : ${err} `);
 		}

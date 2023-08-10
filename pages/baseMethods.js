@@ -1,13 +1,17 @@
 class BaseMethods {
 	constructor(browser) {
-		this.browser = browser;
+		this.browser = browser
+		this.url = ['http://demo.testarena.pl/zaloguj', 'testerzy.pl']
+		this.methods = {
+			post: 'POST'
+		}
 	}
 
 	getUrl(
-		url = this.browser.globals.baseUrl[0],
+		// url = this.browser.globals.baseUrl[0],
 		message = 'The url is correct'
 	) {
-		this.browser.url(url).assert.urlContains(url).Log(message);
+		this.browser.url(this.url[0]).assert.urlContains(url).Log(message);
 
 		return this;
 	}
@@ -37,6 +41,7 @@ class BaseMethods {
 
 	assertElemVisible(selector) {
 		browser.assert.visible(selector);
+
 	}
 }
 

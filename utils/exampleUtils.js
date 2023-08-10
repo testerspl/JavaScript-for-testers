@@ -1,7 +1,7 @@
 class Utils {
 	constructor() {}
 
-	randomString(len = 10, type = 'letters') {
+	static randomString(len = 10, type = 'letters') {
 		type = type && type.toLowerCase();
 		let str = '',
 			i = 0,

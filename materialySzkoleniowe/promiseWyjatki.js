@@ -1,37 +1,47 @@
+let promise1 = new Promise((resolve, reject) => {
+	setTimeout(function () {
+		resolve('foo');
+	});
+});
 
 
-let promise1 = new Promise( (resolve, reject) => {
-    setTimeout(function () {
-        resolve('foo')
-    })
-})
+let promise2 = new Promise((resolve, reject) => {
+	setTimeout(function () {
+		resolve(promise1.then((value) => {
+			console.log(value);
+			// expected output: "foo"
+		}));
+	});
+});
 
-promise1.then((value) => {
-    console.log(value)
-    // expected output: "foo"
-})
+'Krzysiek "Jest trenerem"' // ok
+`Krzysiek` // ok
+"Krzysiek" // error
+let a = "Krzysiek" // error
 
-console.log(promise1)
+promise2.then().then().then()
+
+console.log(promise1);
 // expected output: [object Promise]
-
 
 // NOTE: Obsługa błędów
 
-let promise2 = new Promise((resolve, reject) => {
-    setTimeout(function () {
-        resolve('foo')
-        reject(console.log("DEHDBRIBIJR"))
-    }, 300)
-})
+let promisex = new Promise((resolve, reject) => {
+	setTimeout(function () {
+		resolve('foo');
+		reject(console.log('DEHDBRIBIJR'));
+	}, 300);
+});
 
-promise2.then((value) => {
-    console.log(value)
-    // expected output: "foo"
-}).catch(err => console.log(err))
+promise2
+	.then((value) => {
+		console.log(value);
+		// expected output: "foo"
+	})
+	.catch((err) => console.log(err));
 
-console.log(promise1)
-  // expected output: [object Promise]
-
+console.log(promise1);
+// expected output: [object Promise]
 
 // NOTE: Wyjątki:
 
@@ -51,7 +61,7 @@ console.log(promise1)
 //     super(myDogName,myDogAge)
 //   }
 //   myDogSpeak() {
-  
+
 //     try {
 //       speak()
 //       console.log(this.name + ' age: ' + this.age)
@@ -65,3 +75,24 @@ console.log(promise1)
 // let dog = new Dog()
 
 // dog.myDogSpeak()
+
+function resolveAfter2Seconds() {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve('resolved');
+		}, 10000);
+	}).catch(err => console.log(err))
+}
+
+async function asyncCall() {
+	console.log('calling');
+try {
+	const result = await resolveAfter2Seconds();
+	console.log(result);
+} catch (ex) {
+	console.log(ex)
+}
+	// Expected output: "resolved"
+}
+
+asyncCall();

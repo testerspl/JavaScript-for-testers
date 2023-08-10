@@ -12,7 +12,7 @@
   "author": "Krzysztof Kołodziejczyk",
   "license": "MIT",
   "dependencies": {
-    "chromedriver": ">=111.0.0",
+    "chromedriver": ">=113.0.0",
     "fs": ">=0.0.1-security",
     "geckodriver": ">=3.2.0",
     "log4js": ">=6.9.1",
