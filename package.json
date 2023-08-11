@@ -12,7 +12,6 @@
   "author": "Krzysztof Kołodziejczyk",
   "license": "MIT",
   "devDependencies": {
-    "@nightwatch/mobile-helper": "^0.1.12",
     "nightwatch": "^3.1.2"
   }
 }

@@ -5,7 +5,8 @@ module.exports = {
 	},
 
 	beforeEach: function (browser) {
-		// browser.url('http://demo.testarena.pl/zaloguj');
+		browser.windowMaximize();
+		// browser.url(browser.globals.baseUrl[0]);
 	},
 
 	'Demo login test to test arena': (browser) => {
