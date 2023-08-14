@@ -1,3 +1,6 @@
+
+
+
 // Refer to the online docs for more details:
 // https://nightwatchjs.org/gettingstarted/configuration/
 //
@@ -20,7 +23,7 @@ module.exports = {
 	page_objects_path: ['nightwatch/page-objects'],
 
 	// See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
-	custom_commands_path: ['nightwatch/commands'],
+	custom_commands_path: ['nightwatch/custom-commands'],
 
 	// See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-assertions.html
 	custom_assertions_path: ['nightwatch/assertions'],
@@ -61,6 +64,32 @@ module.exports = {
 		chrome: {
 			desiredCapabilities: {
 				browserName: 'chrome',
+				'goog:chromeOptions': {
+					// More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
+					//
+					// w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
+					w3c: true,
+					args: [
+						//'--no-sandbox',
+						//'--ignore-certificate-errors',
+						//'--allow-insecure-localhost',
+						// '--headless',
+					],
+				},
+			},
+
+			webdriver: {
+				start_process: true,
+				server_path: '',
+				cli_args: [
+					// --verbose
+				],
+			},
+		},
+
+		preprod: {
+			desiredCapabilities: {
+				browserName: 'safari',
 				'goog:chromeOptions': {
 					// More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
 					//
