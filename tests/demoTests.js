@@ -1,3 +1,5 @@
+const fetchApiRequest = require('../api/api.js').Api;
+
 module.exports = {
 	afterEach: function (browser, done) {
 		browser.end();
