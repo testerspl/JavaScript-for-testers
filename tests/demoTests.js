@@ -5,8 +5,7 @@ module.exports = {
 	},
 
 	'Demo login test to test arena': (browser) => {
-		browser.url('https://demo.testarena.pl/zaloguj');
-		browser.pause(20000)
+		browser.url('http://demo.testarena.pl/zaloguj');
 		element('#email').sendKeys('administrator@testarena.pl');
 		element('#password').sendKeys('sumXQQ72$L');
 		element('#login').click();
