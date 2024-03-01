@@ -30,6 +30,7 @@
     let lista = []  
 */
 
+
 typeof null        // "object"
 typeof undefined   // "undefined"
 null === undefined // false
@@ -108,11 +109,13 @@ isNaN(1 + undefined) // true
 // **********************************
 // Metoda: charAt(index)
 
+// Zwracamy konkretny fragment tekstu
 // console.log('Krzysztof'.charAt(8))
 
 // **********************************
 // Metoda: indexOf(str)
 
+// Zwracamy pozycję tekstu, jako wartość liczbową
 // console.log('Krzysztof'.indexOf('f'))
 
 // **********************************
@@ -133,7 +136,8 @@ isNaN(1 + undefined) // true
 // **********************************
 // Metoda: split(str)
 
-// console.log('K,r,z,y,s,z,t,o,f'.split(' '))
+// Zamiana string na Array
+// console.log('K,r,z,y,s,z,t,o,f'.split(','))
 
 // **********************************
 // Metoda: toLowerCase()
@@ -148,4 +152,5 @@ isNaN(1 + undefined) // true
 // **********************************
 // Metoda: inludes()
 
+// Zwracamy prawdę lub fałsz
 // console.log('Krzysztof'.includes('f'))

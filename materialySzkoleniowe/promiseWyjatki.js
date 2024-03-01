@@ -38,7 +38,7 @@ promise2
 		console.log(value);
 		// expected output: "foo"
 	})
-	.catch((err) => console.log(err));
+	.catch((err) => console.log(err))
 
 console.log(promise1);
 // expected output: [object Promise]

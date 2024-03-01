@@ -16,4 +16,11 @@ class BasePage {
   assertElemVisible(selector) {
 		this.browser.assert.visible(selector);
 	}
+
+  assertAppUrl(url = 'demo.testarena.pl/') {
+
+    this.browser.expect.url().to.contain(url);
+  }
 }
+
+module.exports.BasePage = BasePage

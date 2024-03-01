@@ -1,13 +1,16 @@
 // HACK: TABLICE
 
 let osoby = [
-	'Jan Kowalski',
+	,
 	['Adam Nowak', [['Maria Z', 'Janusz G']]],
 	'Maria Z',
 	'Janusz G',
 	[[['Maria Z', 'Janusz G']]],
 	'Marcin J',
 ];
+
+
+
 
 // console.log(osoby)
 
